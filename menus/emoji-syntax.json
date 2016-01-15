@@ -1,0 +1,22 @@
+{
+   "menu": [
+      {
+         "label": "Packages",
+         "submenu": [
+            {
+               "label": "Emoji Syntax",
+               "submenu": [
+                  {
+                     "label": "Toggle",
+                     "command": "emoji-syntax:toggle"
+                  },
+                  {
+                     "label": "Settings",
+                     "command": "emoji-syntax:settings"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

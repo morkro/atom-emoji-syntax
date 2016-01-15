@@ -1,0 +1,147 @@
+@import "ui-variables";
+@import "syntax-variables";
+
+/**
+ * Tab bar
+ */
+.icon-emoji-syntax::before {
+  content: '🔥';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/**
+ * Emoji settings window
+ */
+emoji-settings {
+   overflow: scroll;
+   background-color: @base-background-color;
+   padding: 25px 10%;
+}
+
+/**
+ * Emoji settings list
+ */
+emoji-settings atom-panel {
+   &:not(:last-of-type) {
+      margin-bottom: 15px;
+   }
+
+   &.is-collapsed {
+      border-radius: @component-border-radius;
+      overflow: hidden;
+
+      .panel-body {
+         display: none;
+      }
+   }
+
+   &.is-inactive {
+      .panel-body::before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background: transparent;
+      }
+
+      emoji-keyword {
+         opacity: .3;
+      }
+   }
+
+   .panel-heading {
+      padding: 15px;
+      border: none;
+      background: @inset-panel-background-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .btn { top: 0; }
+      .btn::before { margin-right: 0; }
+   }
+
+   h2 {
+      color: @text-color-highlight;
+      margin: 0;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0 10px;
+   }
+
+   .panel-body {
+      position: relative;
+   }
+}
+
+/**
+ * Keyword view
+ */
+emoji-keyword {
+   display: block;
+   line-height: @component-line-height;
+   padding: @component-padding;
+
+   &:not(:last-of-type) {
+      border-bottom: 1px dashed @tool-panel-border-color;
+   }
+
+   h3 {
+      margin: 0 0 10px;
+   }
+
+   .emoji-preview {
+      background: @input-background-color;
+      border-radius: @component-border-radius;
+      margin-left: @component-padding;
+      padding: @component-padding;
+      width: 30%;
+   }
+
+   .emoji-options {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      div {
+         display: inline-block;
+         margin-right: @component-padding;
+         margin-bottom: 0;
+      }
+
+      div:first-of-type button {
+         width: 40px;
+         height: 40px;
+         font-size: 1em;
+         line-height: 3.7em;
+
+         &::before {
+            font-size: 20px;
+            width: 20px;
+            height: 20px;
+         }
+      }
+
+      .icon::before {
+         margin: 0;
+      }
+   }
+
+   .option-activate {
+      padding-right: 10px;
+      border-right: 1px dashed @inset-panel-background-color;
+   }
+
+   .option-emoji atom-text-editor {
+      width: 40px;
+
+      &.is-error,
+      &.is-error:focus,
+      &.is-error:active, {
+         border-color: @background-color-error;
+         outline-color: @background-color-error;
+      }
+   }
+}
