@@ -6,6 +6,12 @@ Getting bored of your code? Already tried out hundreds of syntax highlighter but
 
 An atom package adding emoji to language keywords.
 
+### Installation
+
+```
+apm install emoji-syntax
+```
+
 ## :microphone: Supported languages
 
 JavaScript `.js` | CSS `.css`
@@ -19,10 +25,10 @@ JavaScript `.js` | CSS `.css`
 
 ## :fire: Features
 
-- Change existing keywords with *any* emoji you want
-- Define position of the emoji around a keyword
-- Add or remove spacing
-- Disable entire languages
+- **Emoji-Syntax is on top of your syntax theme**; means you can still choose any theme you like
+- Change existing keywords with *any* emoji _(or character)_ you want
+- Define position and spacing of an emoji around the keyword
+- Disable entire languages or only specific keywords
 
 ## :wrench: Settings
 
