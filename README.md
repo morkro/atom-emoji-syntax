@@ -10,9 +10,9 @@ An atom package adding emoji to language keywords.
 
 JavaScript `.js` | CSS `.css`
 ---------- | --- | ----
-<img src='resources/javascript-preview.png'> | <img src='resources/css-preview.png'>
+<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/javascript-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/css-preview.png'>
 **Sass `.scss, .sass`** |
-<img src='resources/scss-preview.png'> |
+<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> |
 
 ### In progress
 - PHP `.php`
