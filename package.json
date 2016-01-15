@@ -7,8 +7,17 @@
   "keywords": [
     "emoji"
   ],
-  "repository": "",
-  "license": "MIT",
+  "repository": {
+     "type": "git",
+     "url": "git://github.com/morkro/atom-emoji-syntax.git"
+  },
+  "licenses": {
+      "type": "MIT",
+      "url": "https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE.md"
+  },
+  "bugs": {
+      "url": "https://github.com/morkro/atom-emoji-syntax/issues"
+   },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
