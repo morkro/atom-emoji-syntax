@@ -17,11 +17,11 @@ apm install emoji-syntax
 JavaScript `.js` | CSS `.css`
 ---------- | --- | ----
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/javascript-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/css-preview.png'>
-**Sass `.scss, .sass`** |
-<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> |
+**Sass `.scss, .sass`** | **PHP `.php`**
+<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/php-preview.png'>
 
 ### In progress
-- PHP `.php`
+- Python `.py`
 
 ## :fire: Features
 
@@ -29,6 +29,13 @@ JavaScript `.js` | CSS `.css`
 - Change existing keywords with *any* emoji _(or character)_ you want
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
+
+### Planned
+
+- All languages
+
+
+Take a look into the [issues page](https://github.com/morkro/atom-emoji-syntax/labels/feature).
 
 ## :wrench: Settings
 
@@ -39,14 +46,11 @@ _Default: `true`_
 
 If enabled it is only allowed to use a valid emoji unicode and not any other character.
 
-## :clipboard: Planned
-
-- All languages
-- Code preview of keywords in settings view
-- Set to default option per language
-- Settings view should stay active when reloading editor
-
 Do you have a feature request? Just open an issue here on Github!
+
+## :family: Contribution
+
+If you want to contribute by either extending/improving a language set, adding a new language, fixing a bug or anything else you can do that by simply sending a pull request.
 
 ## :copyright: License
 The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE.md).
