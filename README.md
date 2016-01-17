@@ -12,7 +12,7 @@ An atom package adding emoji to language keywords.
 apm install emoji-syntax
 ```
 
-## :microphone: Supported languages
+## Supported languages :microphone:
 
 JavaScript `.js` | CSS `.css`
 ---------- | --- | ----
@@ -23,7 +23,7 @@ JavaScript `.js` | CSS `.css`
 ### In progress
 - Python `.py`
 
-## :fire: Features
+## Features :fire:
 
 - **Emoji-Syntax is on top of your syntax theme**; means you can still choose any theme you like
 - Change existing keywords with *any* emoji _(or character)_ you want
@@ -37,7 +37,7 @@ JavaScript `.js` | CSS `.css`
 
 Take a look into the [issues page](https://github.com/morkro/atom-emoji-syntax/labels/feature).
 
-## :wrench: Settings
+## Settings :wrench:
 
 _You can display the project's emoji settings through the `Emoji Syntax: Settings` command from the command palette or `Packages` menu._
 
@@ -48,9 +48,9 @@ If enabled it is only allowed to use a valid emoji unicode and not any other cha
 
 Do you have a feature request? Just open an issue here on Github!
 
-## :family: Contribution
+## Contribution :family:
 
 If you want to contribute by either extending/improving a language set, adding a new language, fixing a bug or anything else you can do that by simply sending a pull request.
 
-## :copyright: License
+## License :copyright:
 The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE.md).
