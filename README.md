@@ -1,4 +1,4 @@
-# Emoji Syntax [![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax)
+# Emoji Syntax [![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
