@@ -71,3 +71,23 @@ function* foo () {
 console.log('foo logging');
 console.warn(`don't do that!`);
 console.error('NO');
+
+/**
+ * Keyword: method
+ */
+class Wizard = {
+  enableMagic() {
+    return true
+  }
+}
+
+/**
+ * Keyword: const
+ */
+const okay = false
+
+/**
+ * Keyword: variable
+ */
+let it = 'be'
+var x = true
