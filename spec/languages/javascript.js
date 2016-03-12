@@ -75,7 +75,7 @@ console.error('NO');
 /**
  * Keyword: method
  */
-class Wizard = {
+class Wizard {
   enableMagic() {
     return true
   }
@@ -84,10 +84,10 @@ class Wizard = {
 /**
  * Keyword: const
  */
-const okay = false
+const okay = false;
 
 /**
  * Keyword: variable
  */
-let it = 'be'
-var x = true
+let it = 'be';
+var x = true;
