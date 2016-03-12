@@ -76,8 +76,8 @@ console.error('NO');
  * Keyword: method
  */
 class Wizard {
-  enableMagic() {
-    return true
+   enableMagic() {
+     return true;
   }
 }
 
