@@ -1,7 +1,7 @@
 {
   "name": "emoji-syntax",
   "main": "./lib/main",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Adds customisable emoji to your syntax keywords",
   "author": "Moritz Kröger <write@morkro.de>",
   "keywords": [
