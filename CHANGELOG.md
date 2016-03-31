@@ -1,7 +1,7 @@
-## 0.5.2 (January 17th, 2016)
+## 0.5.2 (March 31st, 2016)
 * Added one more emoji keyword to SCSS
 
-## 0.5.1 (January 24th, 2016)
+## 0.5.1 (March 24th, 2016)
 * Replaced work-around helper function with NPM module
 
 ## 0.5.0 (March 12th, 2016)
