@@ -31,6 +31,9 @@
     "xdg-basedir": "^2.0.0"
   },
   "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^7.0.0",
+    "eslint-plugin-import": "^1.4.0",
     "path-exists": "^2.0.0"
   }
 }

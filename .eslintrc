@@ -1,0 +1,25 @@
+{
+	"env": {
+		"es6": true,
+		"browser": true,
+		"atomtest": true,
+		"jasmine": true
+	},
+	"globals": {
+		"atom": true
+	},
+	"extends": "airbnb/base",
+	"rules": {
+		"indent": [2, "tab"],
+		"quotes": [2, "single"],
+		"linebreak-style": [2, "unix"],
+		"semi": [2, "always"],
+		"comma-dangle": [2, "never"],
+		"space-before-function-paren": [
+			2, { "anonymous": "never", "named": "always" }
+		],
+		"brace-style": ["error", "stroustrup"],
+		"prefer-rest-params": 0,
+		"consistent-return": 0
+	}
+}

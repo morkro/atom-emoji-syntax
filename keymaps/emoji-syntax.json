@@ -1,5 +1,5 @@
 {
-   "atom-workspace": {
-      "alt-shift-e": "emoji-syntax:toggle"
-   }
+	"atom-workspace": {
+		"alt-shift-e": "emoji-syntax:toggle"
+	}
 }
