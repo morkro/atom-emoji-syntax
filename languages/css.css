@@ -1,0 +1,49 @@
+/**
+ * Keyword: @import
+ */
+@import url("fineprint.css") print;
+@import url("bluish.css") projection, tv;
+@import "custom.css";
+
+/**
+ * Keyword: @media
+ */
+@media print {
+   body { font-size: 10pt }
+}
+
+@media screen {
+   body { font-size: 13px }
+}
+
+@media screen, print {
+   body { line-height: 1.2 }
+}
+
+/**
+ * Keyword: @keyframes
+ */
+@keyframes identifier {
+   0% { top: 0; left: 0; }
+   30% { top: 50px; }
+   68%, 72% { left: 50px; }
+   100% { top: 100px; left: 100%; }
+}
+
+/**
+ * Keyword: @font-face
+ */
+@font-face {
+   font-family: MyHelvetica;
+   src: local("Helvetica Neue Bold"),
+      local("HelveticaNeue-Bold"),
+      url(MgOpenModernaBold.ttf);
+   font-weight: bold;
+}
+
+/**
+ * Keyword: !important
+ */
+.element {
+   height: 50px !important;
+}

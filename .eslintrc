@@ -1,12 +1,18 @@
 {
 	"env": {
 		"es6": true,
+		"node": true,
 		"browser": true,
 		"jasmine": true
 	},
 	"globals": {
 		"atom": true
 	},
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module"
+	},
+	"plugins": ["import"],
 	"extends": "airbnb/base",
 	"rules": {
 		"indent": [2, "tab"],
@@ -17,7 +23,7 @@
 		"space-before-function-paren": [
 			2, { "anonymous": "never", "named": "always" }
 		],
-		"brace-style": ["error", "stroustrup"],
+		"brace-style": [2, "stroustrup"],
 		"prefer-rest-params": 0,
 		"consistent-return": 0
 	}

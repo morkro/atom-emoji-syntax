@@ -1,0 +1,46 @@
+/**
+ * Keyword: @keyframes
+ */
+@keyframes identifier {
+   0% { top: 0; left: 0; }
+   30% { top: 50px; }
+   68%, 72% { left: 50px; }
+   100% { top: 100px; left: 100%; }
+}
+
+/**
+ * Keyword: @font-face
+ */
+@font-face {
+   font-family: MyHelvetica;
+   src: local("Helvetica Neue Bold"),
+      local("HelveticaNeue-Bold"),
+      url(MgOpenModernaBold.ttf);
+   font-weight: bold;
+}
+
+/**
+ * Keyword: @mixin
+ */
+@mixin border-radius($radius) {
+   -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+   -ms-border-radius: $radius;
+   border-radius: $radius;
+}
+
+/**
+ * Keyword: @for
+ */
+@for $i from 1 through 4 {
+   .element-#{$i} {
+      width: 60px + $i;
+   }
+}
+
+/**
+ * Keyword: @function
+ */
+@function calc-percent($target, $container) {
+   @return ($target / $container) * 100%;
+}
