@@ -42,7 +42,7 @@ describe('<emoji-keyword>', () => {
 
 	it('has all options', () => {
 		expect(element.querySelector('.option-activate')).toBeDefined();
-		expect(element.querySelector('.option-emoij')).toBeDefined();
+		expect(element.querySelector('.option-emoji')).toBeDefined();
 		expect(element.querySelector('.option-pseudo')).toBeDefined();
 		expect(element.querySelector('.option-spacing')).toBeDefined();
 	});

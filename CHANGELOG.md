@@ -1,3 +1,10 @@
+## 1.0.0 (April 17st, 2016)
+* Changed emoji option in settings to a list of all existing emoji. This removed the `strictEmojiMode` option from the package settings and is reason for the major version bump.
+* Layout update of the settings page
+* Removed unneeded dependencies
+* Added ESLint
+* Updated README
+
 ## 0.5.2 (March 31st, 2016)
 * Added one more emoji keyword to SCSS
 

@@ -1,7 +1,2 @@
 {
-	"strictEmojiMode": {
-		"description": "If activated, it's only allowed to use emoji Unicode and not any other character.",
-		"type": "boolean",
-		"default": true
-	}
 }

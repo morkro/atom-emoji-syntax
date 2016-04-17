@@ -1,4 +1,5 @@
-# Emoji Syntax [![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
+<h1 align="center"><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax"></h1>
+[![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
@@ -20,13 +21,10 @@ JavaScript `.js` | CSS `.css`
 **Sass `.scss, .sass`** | **PHP `.php`**
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/php-preview.png'>
 
-### In progress
-- Python `.py`
-
 ## Features :fire:
 
 - **Emoji-Syntax is on top of your syntax theme**; means you can still choose any theme you like
-- Change existing keywords with *any* emoji _(or character)_ you want
+- Change existing keywords with *any* emoji you want
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
@@ -39,14 +37,7 @@ Take a look into the [issues page](https://github.com/morkro/atom-emoji-syntax/l
 
 ## Settings :wrench:
 
-_You can display the project's emoji settings through the `Emoji Syntax: Settings` command from the command palette or `Packages` menu._
-
-#### Strict Emoji Mode
-_Default: `true`_
-
-If enabled it is only allowed to use a valid emoji unicode and not any other character.
-
-Do you have a feature request? Just open an issue here on Github!
+_Since version `1.0.0` of Emoji Syntax the `strictEmojiMode` option has been removed._
 
 ## Contribution :family:
 
