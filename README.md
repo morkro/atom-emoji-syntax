@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax"></h1>
+<h1 align="center"><img src="resources/emoji-syntax-logo.svg" alt="Emoji Syntax"></h1>
 [![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
