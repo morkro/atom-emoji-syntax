@@ -1,3 +1,6 @@
+## 1.0.1 (April 20st, 2016)
+* Changed LICENSE extension (formerly `.md`) because Atom couldn't find it
+
 ## 1.0.0 (April 17st, 2016)
 * Changed emoji option in settings to a list of all existing emoji. This removed the `strictEmojiMode` option from the package settings and is reason for the major version bump.
 * Layout update of the settings page
