@@ -8,13 +8,11 @@ Getting bored of your code? Already tried out hundreds of syntax highlighter but
 An atom package adding emoji to language keywords.
 
 ### Installation
-
 ```
 apm install emoji-syntax
 ```
 
 ## Supported languages :microphone:
-
 JavaScript `.js` | CSS `.css`
 ---------- | --- | ----
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/javascript-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/css-preview.png'>
@@ -22,17 +20,12 @@ JavaScript `.js` | CSS `.css`
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/php-preview.png'>
 
 ## Features :fire:
-
-- **Emoji-Syntax is on top of your syntax theme**; means you can still choose any theme you like
+- **Emoji-Syntax is on top of your syntax theme**; you can still choose any theme you like
 - Change existing keywords with *any* emoji you want
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
 ### Planned
-
-- All languages
-
-
 Take a look into the [issues page](https://github.com/morkro/atom-emoji-syntax/labels/feature).
 
 ## Settings :wrench:
@@ -44,4 +37,4 @@ _Since version `1.0.0` of Emoji Syntax the `strictEmojiMode` option has been rem
 If you want to contribute by either extending/improving a language set, adding a new language, fixing a bug or anything else you can do that by simply sending a pull request.
 
 ## License :copyright:
-The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE.md).
+The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE).
