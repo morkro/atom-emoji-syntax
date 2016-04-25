@@ -2,7 +2,7 @@
 
 import createNode from '../lib/helpers/create-node';
 import HTML from '../lib/helpers/create-html';
-import isEmoji from '../lib/helpers/is-emoji';
+import { isEmoji } from '../lib/helpers/unicode';
 import { getLanguage, getAllLanguages } from '../lib/helpers/get-all-languages';
 import getLanguageSelectors from '../lib/helpers/get-language-selectors';
 import createSelector from '../lib/helpers/create-selector';
