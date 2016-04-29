@@ -1,9 +1,9 @@
 {
 	"emojiStyles": {
 		"type": "string",
-		"default": "System",
+		"default": "Native",
 		"title": "Emoji style",
 		"description": "Choose between different emoji sets",
-		"enum": ["System", "Twemoji", "Noto Emoji", "Emoji One"]
+		"enum": ["Native", "Twemoji", "Noto Emoji", "Emoji One"]
 	}
 }

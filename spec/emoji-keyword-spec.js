@@ -1,6 +1,6 @@
 'use babel';
 
-import EmojiKeywordView from '../lib/custom-elements/emoji-keyword-view';
+import KeywordElement from '../lib/custom-elements/emoji-keyword';
 import { getLanguage } from '../lib/helpers/get-all-languages';
 
 /**
@@ -8,7 +8,7 @@ import { getLanguage } from '../lib/helpers/get-all-languages';
  */
 describe('<emoji-keyword>', () => {
 	const exampleLanguage = getLanguage('javascript').all;
-	const element = new EmojiKeywordView();
+	const element = new KeywordElement();
 
 	beforeEach(() => {
 		element.initialize({
