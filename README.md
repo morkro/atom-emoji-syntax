@@ -1,8 +1,7 @@
 <h1 align="center">
 	<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;">
-	![Build Status](https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master)](https://travis-ci.org/morkro/atom-emoji-syntax)
-
-	![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
+	<a href="https://travis-ci.org/morkro/atom-emoji-syntax" target="_blank"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a>
+	<img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg">
 </h1>
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
@@ -42,3 +41,8 @@ If you want to contribute by either extending/improving a language set, adding a
 
 ## License :copyright:
 The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE).
+
+### Emoji graphics
+- [Twemoji](https://github.com/twitter/twemoji) licensed under [CC-BY 4.0](https://github.com/twitter/twemoji/blob/gh-pages/LICENSE-GRAPHICS)
+- [Noto Emoji](https://github.com/googlei18n/noto-emoji) licensed under [SIL Open Font License, version 1.1](https://github.com/googlei18n/noto-emoji/blob/master/fonts/LICENSE)
+- [EmojiOne™](https://github.com/Ranks/emojione) licensed under [Creative Commons Attribution 4.0 International](https://github.com/Ranks/emojione/blob/master/LICENSE.md)
