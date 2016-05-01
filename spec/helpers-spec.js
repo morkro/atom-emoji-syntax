@@ -2,7 +2,6 @@
 
 import HTML from '../lib/helpers/create-html';
 import createNode from '../lib/helpers/create-node';
-import createSelector from '../lib/helpers/create-selector';
 import { getLanguage, getAllLanguages } from '../lib/helpers/get-all-languages';
 import getArrayOfProp from '../lib/helpers/get-array-of-props';
 import getListOfEmoji from '../lib/helpers/get-list-of-emoji';
@@ -60,25 +59,6 @@ describe('Creating a node', () => {
 		expect(scndElement.classList.contains('class')).toBe(true);
 		expect(scndElement.querySelector('strong')).toBeDefined();
 		expect(scndElement.querySelector('strong').textContent).toContain('baz');
-	});
-});
-
-describe('Creating a CSS selector', () => {
-	let selector = null;
-	let css = null;
-
-	beforeEach(() => {
-		css = getLanguage('css').all;
-		selector = createSelector(css.languageSelector, {
-			emoji: css['@import'].emoji,
-			selector: css['@import'].selector,
-			pseudo: css['@import'].pseudo,
-			spacing: css['@import'].spacing
-		});
-	});
-
-	it('is a valid CSS selector', () => {
-		expect(typeof selector === 'string').toBe(true);
 	});
 });
 
