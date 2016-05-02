@@ -1,10 +1,8 @@
-<h1 align="center">
-	<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;display:block;">
-
-	[<img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status">](https://travis-ci.org/morkro/atom-emoji-syntax)
-
-	![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
-</h1>
+<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;display:block;">
+<div style="text-align:center">
+[<img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status">](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
+</div>
+<hr>
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
@@ -58,21 +56,9 @@ JavaScript `.js, .jsx` | CSS `.css`
 
 ## Package Settings :wrench:
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Default</th>
-		<th>Options</th>
-	</tr>
-	<tr>
-		<td>
-			<strong style="display:block;">Emoji style</strong>
-			Lets you choose between different emoji icon sets
-		</td>
-		<td>`Native`</td>
-		<td>`Native, Twemoji, Noto Emoji, Emoji One`</td>
-	</tr>
-</table>
+| Name                                                           | Default |                 Options                |
+|----------------------------------------------------------------|:-------:|:--------------------------------------:|
+| **Emoji Style**: Lets you choose between different emoji icon sets | `Native`  | `Native, Twemoji, Noto Emoji, Emoji One` |
 
 ## Emoji Settings Page
 Emoji Syntax comes with its own settings page. There you can customise, activate and deactivate every emoji for each language. The settings page is available through `Packages > Emoji Syntax > Settings` or the `emoji-syntax:settings` command.

@@ -2,7 +2,7 @@
 	"emojiStyles": {
 		"type": "string",
 		"default": "Native",
-		"title": "Emoji style",
+		"title": "Emoji Style",
 		"description": "Choose between different emoji sets",
 		"enum": ["Native", "Twemoji", "Noto Emoji", "Emoji One"]
 	}
