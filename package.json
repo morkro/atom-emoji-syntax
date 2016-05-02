@@ -30,6 +30,6 @@
     "eslint": "^2.8.0",
     "eslint-config-airbnb": "^7.0.0",
     "eslint-plugin-import": "^1.4.0",
-    "path-exists": "^2.0.0"
+    "path-exists": "^3.0.0"
   }
 }
