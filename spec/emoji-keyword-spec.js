@@ -21,12 +21,8 @@ describe('<emoji-keyword>', () => {
 
 	it('is correctly created and has all data-attributes', () => {
 		expect(element).toBeDefined();
-
 		expect(element.hasAttribute('data-emoji-language')).toBe(true);
-		expect(element.getAttribute('data-emoji-language').length).toBeGreaterThan(0);
-
 		expect(element.hasAttribute('data-emoji-keyword')).toBe(true);
-		expect(element.getAttribute('data-emoji-keyword').length).toBeGreaterThan(0);
 	});
 
 	it('has a headline with content', () => {
