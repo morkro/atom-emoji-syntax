@@ -1,6 +1,6 @@
-<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;display:block;">
+<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;display:block;margin:0 auto;">
 <div style="text-align:center">
-[<img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status">](https://travis-ci.org/morkro/atom-emoji-syntax) ![devDependencies](https://david-dm.org/morkro/atom-emoji-syntax.svg)
+<a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a> <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg">
 </div>
 <hr>
 
@@ -35,6 +35,7 @@ JavaScript `.js, .jsx` | CSS `.css`
 **Python `.py`** |
 
 ## Icon Sets
+_Note: not all emoji are supported in each of the custom sets yet!_
 <table>
 	<tr>
 		<th>Native</th>
@@ -57,7 +58,7 @@ JavaScript `.js, .jsx` | CSS `.css`
 ## Package Settings :wrench:
 
 | Name                                                           | Default |                 Options                |
-|----------------------------------------------------------------|:-------:|:--------------------------------------:|
+|:---------------------------------------------------------------|:-------:|:--------------------------------------:|
 | **Emoji Style**: Lets you choose between different emoji icon sets | `Native`  | `Native, Twemoji, Noto Emoji, Emoji One` |
 
 ## Emoji Settings Page

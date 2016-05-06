@@ -27,6 +27,26 @@ emoji-settings {
 		display: block;
 	}
 
+	header {
+		margin-bottom: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h1 {
+			font-size: 3em;
+		}
+
+		h3 {
+			font-style: italic;
+			color: @text-color-subtle;
+		}
+
+		.toggle-languages {
+			height: 30px;
+		}
+	}
+
 	.settings-overlay {
 		display: none;
 		width: 100%;
@@ -50,6 +70,11 @@ emoji-list {
 	padding: 0 !important;
 	display: none;
 
+	 &.show-custom {
+		.list-emoji-custom, .current img { display: block; }
+		.list-emoji-native { display: none; }
+	 }
+
 	.select-list:not(.current) {
 		max-height: 600px;
 		height: 50vh;
@@ -59,14 +84,6 @@ emoji-list {
 
 	.emoji-overlay & {
 		display: block;
-	}
-
-	.list {
-		list-style: none;
-		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
-		padding: 10px;
 	}
 
 	h2 {
@@ -80,10 +97,36 @@ emoji-list {
 		margin-top: 0;
 	}
 
-	span {
-		font-size: 175%;
-		cursor: pointer;
-		padding: 2px;
+	.list {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+
+	li {
+		&:hover {
+			background: @button-background-color;
+		}
+
+		div {
+			padding: 2px;
+			cursor: pointer;
+		}
+
+		span {
+			font-size: 175%;
+		}
+
+		.list-emoji-custom {
+			display: none;
+			background-repeat: no-repeat;
+			background-size: contain;
+			color: transparent;
+			width: 1.8em;
+			height: 1.8em;
+		}
 	}
 
 	.current {
@@ -102,24 +145,13 @@ emoji-list {
 			margin-left: 10px;
 			font-size: inherit;
 		}
-	}
-}
 
-/**
- * Emoji settings header
- */
-.emoji-settings-header {
-	margin-bottom: 25px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	h1 {
-		font-size: 3em;
-	}
-
-	.toggle-languages {
-		height: 30px;
+		img {
+			margin-left: 10px;
+			display: none;
+			width: 1.8em;
+			height: 1.8em;
+		}
 	}
 }
 
