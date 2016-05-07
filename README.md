@@ -1,8 +1,6 @@
-<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;display:block;margin:0 auto;">
-<div style="text-align:center">
+<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;">
 <a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a> <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg">
-</div>
-<hr>
+---
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
