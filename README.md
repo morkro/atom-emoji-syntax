@@ -22,6 +22,8 @@ or search for `emoji syntax` in your Atom settings panel.
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
+_This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
+
 ## Supported Languages :microphone:
 _Note: some screenshots show only a fraction of available emoji per language._
 
