@@ -17,7 +17,7 @@ emoji-settings {
 	background-color: @base-background-color;
 	padding: 25px 10%;
 
-	&.emoji-overlay .emoji-settings-header,
+	&.emoji-overlay header,
 	&.emoji-overlay atom-panel {
 		opacity: 0.4;
 		pointer-events: none;
@@ -71,8 +71,9 @@ emoji-list {
 	display: none;
 
 	 &.show-custom {
-		.list-emoji-custom, .current img { display: block; }
-		.list-emoji-native { display: none; }
+		.list-emoji-custom { display: block; }
+		.current img { display: inline-block; }
+		.list-emoji-native, .current span { display: none; }
 	 }
 
 	.select-list:not(.current) {
@@ -124,8 +125,8 @@ emoji-list {
 			background-repeat: no-repeat;
 			background-size: contain;
 			color: transparent;
-			width: 1.8em;
-			height: 1.8em;
+			width: 1.3em;
+			height: 1.3em;
 		}
 	}
 
@@ -149,8 +150,8 @@ emoji-list {
 		img {
 			margin-left: 10px;
 			display: none;
-			width: 1.8em;
-			height: 1.8em;
+			width: 1.2em;
+			height: 1.2em;
 		}
 	}
 }
