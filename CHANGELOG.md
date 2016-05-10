@@ -1,3 +1,6 @@
+## 1.1.0 (May 10th, 2016)
+* Added language support for TypeScript
+
 ## 1.0.1 (April 20st, 2016)
 * Changed LICENSE extension (formerly `.md`) because Atom couldn't find it
 
