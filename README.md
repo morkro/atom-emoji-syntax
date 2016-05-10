@@ -22,17 +22,19 @@ or search for `emoji syntax` in your Atom settings panel.
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
-_This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
+## Supported languages :microphone:
+Only official language packages are supported by Emoji Syntax. Other language packages might use different selectors to highlight syntax and might not work as intended.
 
-## Supported Languages :microphone:
 _Note: some screenshots show only a fraction of available emoji per language._
 
-JavaScript `.js, .jsx` | CSS `.css`
+JavaScript `.js` | CSS `.css`
 ---------- | --- | ----
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/javascript-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/css-preview.png'>
 **Sass `.scss, .sass`** | **PHP `.php`**
 <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/php-preview.png'>
-**Python `.py`** |
+**Python `.py`** | **TypeScript `.ts`**
+
+_This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
 
 ## Icon Sets
 _Note: not all emoji are supported in each of the custom sets yet!_
@@ -61,7 +63,7 @@ _Note: not all emoji are supported in each of the custom sets yet!_
 |:---------------------------------------------------------------|:-------:|:--------------------------------------:|
 | **Emoji Style**: Lets you choose between different emoji icon sets | `Native`  | `Native, Twemoji, Noto Emoji, Emoji One` |
 
-## Emoji Settings Page
+## Emoji Settings Page :wrench:
 Emoji Syntax comes with its own settings page. There you can customise, activate and deactivate every emoji for each language. The settings page is available through `Packages > Emoji Syntax > Settings` or the `emoji-syntax:settings` command.
 
 ![Emoji Settings Page](https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/settingspage-preview.png)
