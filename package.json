@@ -27,7 +27,7 @@
     "emojilib": "^2.0.2"
   },
   "devDependencies": {
-    "eslint": "^2.8.0",
+    "eslint": "^2.10.0",
     "eslint-config-airbnb": "^7.0.0",
     "eslint-plugin-import": "^1.4.0",
     "path-exists": "^3.0.0"
