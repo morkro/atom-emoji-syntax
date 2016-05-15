@@ -2,7 +2,6 @@
 
 import HTML from '../lib/helpers/create-html';
 import createNode from '../lib/helpers/create-node';
-import { getLanguage, getAllLanguages } from '../lib/helpers/get-all-languages';
 import getArrayOfProp from '../lib/helpers/get-array-of-props';
 import getListOfEmoji from '../lib/helpers/get-list-of-emoji';
 import { isEmoji, getHexadecimalUnicode } from '../lib/helpers/unicode';
@@ -59,20 +58,6 @@ describe('Creating a node', () => {
 		expect(scndElement.classList.contains('class')).toBe(true);
 		expect(scndElement.querySelector('strong')).toBeDefined();
 		expect(scndElement.querySelector('strong').textContent).toContain('baz');
-	});
-});
-
-describe('Receiving language objects', () => {
-	const allLanguages = getAllLanguages(true);
-	const specificLanguage = getLanguage('javascript');
-
-	it('returned all available language objects', () => {
-		expect(allLanguages.length).toBeGreaterThan(0);
-		expect(allLanguages instanceof Array).toBe(true);
-	});
-
-	it('returns the correct language', () => {
-		expect(specificLanguage.all.languageName).toContain('JavaScript');
 	});
 });
 

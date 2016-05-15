@@ -1,6 +1,6 @@
 'use babel';
 
-import { getLanguage } from '../lib/helpers/get-all-languages';
+import languages from '../lib/get-languages';
 import { getHexadecimalUnicode } from '../lib/helpers/unicode';
 import EmojiStyleSheet from '../lib/stylesheet';
 
@@ -8,7 +8,7 @@ describe('Emoji StyleSheet Module', () => {
 	atom.packages.activatePackage('emoji-syntax');
 
 	describe('Creates a CSS selector', () => {
-		const css = getLanguage('css').all;
+		const css = languages.get('css').all;
 		let selector = null;
 		let content = null;
 

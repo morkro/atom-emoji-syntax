@@ -1,13 +1,13 @@
 'use babel';
 
 import KeywordElement from '../lib/custom-elements/emoji-keyword';
-import { getLanguage } from '../lib/helpers/get-all-languages';
+import languages from '../lib/get-languages';
 
 /**
  * @todo Add functional testing. Right now there is only basic DOM testing.
  */
 describe('<emoji-keyword>', () => {
-	const exampleLanguage = getLanguage('javascript').all;
+	const exampleLanguage = languages.get('javascript').all;
 	const element = new KeywordElement();
 
 	beforeEach(() => {
@@ -21,8 +21,8 @@ describe('<emoji-keyword>', () => {
 
 	it('is correctly created and has all data-attributes', () => {
 		expect(element).toBeDefined();
-		expect(element.hasAttribute('data-emoji-language')).toBe(true);
-		expect(element.hasAttribute('data-emoji-keyword')).toBe(true);
+		expect(element.hasAttribute('data-language')).toBe(true);
+		expect(element.hasAttribute('data-keyword')).toBe(true);
 	});
 
 	it('has a headline with content', () => {
