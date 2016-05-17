@@ -78,7 +78,6 @@ emoji-list {
 
 	.select-list:not(.current) {
 		max-height: 600px;
-		height: 50vh;
 		width: 400px !important;
 		overflow-y: scroll;
 	}
@@ -87,21 +86,24 @@ emoji-list {
 		display: block;
 	}
 
-	h2 {
-		text-transform: capitalize;
-		margin: 10px 0;
-		padding: 10px;
-		background: @button-background-color;
+	// Sections
+	section:first-of-type {
+		h2 { margin-top: 0; }
+		.list { display: flex; }
 	}
 
-	section:first-of-type h2 {
-		margin-top: 0;
+	h2 {
+		text-transform: capitalize;
+		margin: 10px 0 0;
+		padding: 10px;
+		background: @button-background-color;
+		cursor: pointer;
 	}
 
 	.list {
 		list-style: none;
 		padding: 0;
-		display: flex;
+		display: none;
 		flex-wrap: wrap;
 		padding: 10px;
 	}
@@ -130,6 +132,7 @@ emoji-list {
 		}
 	}
 
+	// Current
 	.current {
 		background: @button-background-color !important;
 		margin-bottom: 20px;
