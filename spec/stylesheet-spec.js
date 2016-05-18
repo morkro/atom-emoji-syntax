@@ -1,7 +1,6 @@
 'use babel';
 
 import languages from '../lib/get-languages';
-import { getHexadecimalUnicode } from '../lib/helpers/unicode';
 import EmojiStyleSheet from '../lib/stylesheet';
 
 describe('Emoji StyleSheet Module', () => {
