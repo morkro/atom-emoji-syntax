@@ -87,9 +87,8 @@ emoji-list {
 	}
 
 	// Sections
-	section:first-of-type {
-		h2 { margin-top: 0; }
-		.list { display: flex; }
+	section:first-of-type h2 {
+		margin-top: 0;
 	}
 
 	h2 {
@@ -106,6 +105,8 @@ emoji-list {
 		display: none;
 		flex-wrap: wrap;
 		padding: 10px;
+
+		&.list-open { display: flex; }
 	}
 
 	li {
@@ -143,6 +144,7 @@ emoji-list {
 			display: inline-block;
 			margin-bottom: 0;
 			color: @text-color-selected;
+			cursor: text;
 		}
 
 		span {
