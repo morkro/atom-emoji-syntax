@@ -71,22 +71,6 @@ describe('Emoji StyleSheet Module', () => {
 		});
 	});
 
-	describe('Returns correct image path', () => {
-		const userPath = atom.packages.resolvePackagePath('emoji-syntax');
-		const unicode = getHexadecimalUnicode('💩');
-		const pathNormal = EmojiStyleSheet.getImagePath('twemoji', '💩');
-		const pathNoArgs = EmojiStyleSheet.getImagePath();
-
-		it('should return path', () => {
-			expect(typeof pathNormal === 'string').toBe(true);
-			expect(pathNormal).toEqual(`${userPath}/styles/twemoji/${unicode}.svg`);
-		});
-
-		it('should fail', () => {
-			expect(pathNoArgs).not.toBeDefined();
-		});
-	});
-
 	describe('Adds, removes, updates stylesheet', () => {
 		beforeEach(() => {
 			atom.packages.activatePackage('emoji-syntax');
