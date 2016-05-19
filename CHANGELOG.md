@@ -1,3 +1,8 @@
+## 1.2.0 (May, 2016)
+* Added support for different emoji style sets
+* Refactored large parts of the code including custom elements, controllers and helper functions
+* Updated testing
+
 ## 1.1.0 (May 10th, 2016)
 * Added language support for TypeScript
 
