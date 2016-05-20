@@ -8,7 +8,7 @@ describe('Emoji Syntax', () => {
 	});
 
 	afterEach(() => {
-		atom.packages.activatePackage('emoji-syntax');
+		atom.packages.deactivatePackage('emoji-syntax');
 	});
 
 	describe('when the package is activated', () => {

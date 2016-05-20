@@ -4,7 +4,13 @@ import languages from '../lib/get-languages';
 import EmojiStyleSheet from '../lib/stylesheet';
 
 describe('Emoji StyleSheet Module', () => {
-	atom.packages.activatePackage('emoji-syntax');
+	beforeEach(() => {
+		atom.packages.activatePackage('emoji-syntax');
+	});
+
+	afterEach(() => {
+		atom.packages.deactivatePackage('emoji-syntax');
+	});
 
 	describe('Creates a CSS selector', () => {
 		const css = languages.get('css').all;
@@ -12,7 +18,6 @@ describe('Emoji StyleSheet Module', () => {
 		let content = null;
 
 		beforeEach(() => {
-			atom.packages.activatePackage('emoji-syntax');
 			content = EmojiStyleSheet.getContent();
 			selector = EmojiStyleSheet.createSelector({
 				language: css.languageSelector,
@@ -33,10 +38,15 @@ describe('Emoji StyleSheet Module', () => {
 	});
 
 	describe('Creates a valid <style> element', () => {
-		const elementDefault = EmojiStyleSheet.createElement();
-		const elementCustom = EmojiStyleSheet.createElement({
-			context: 'different-context',
-			priority: 'highest'
+		let elementDefault = null;
+		let elementCustom = null;
+
+		beforeEach(() => {
+			elementDefault = EmojiStyleSheet.createElement();
+			elementCustom = EmojiStyleSheet.createElement({
+				context: 'different-context',
+				priority: 'highest'
+			});
 		});
 
 		it('is a valid HTML element', () => {
@@ -71,10 +81,6 @@ describe('Emoji StyleSheet Module', () => {
 	});
 
 	describe('Adds, removes, updates stylesheet', () => {
-		beforeEach(() => {
-			atom.packages.activatePackage('emoji-syntax');
-		});
-
 		it('should add stylesheet', () => {
 			EmojiStyleSheet.add();
 			expect(EmojiStyleSheet.exists()).toBe(true);
