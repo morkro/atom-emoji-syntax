@@ -1,12 +1,28 @@
 'use babel';
 
-import createNode from '../lib/helpers/create-node';
 import HTML from '../lib/helpers/create-html';
-import isEmoji from '../lib/helpers/is-emoji';
-import { getLanguage, getAllLanguages } from '../lib/helpers/get-all-languages';
-import getLanguageSelectors from '../lib/helpers/get-language-selectors';
-import createSelector from '../lib/helpers/create-selector';
-import createStyleSheet from '../lib/helpers/create-stylesheet-element';
+import createNode from '../lib/helpers/create-node';
+import getArrayOfProp from '../lib/helpers/get-array-of-props';
+import getListOfEmoji from '../lib/helpers/get-list-of-emoji';
+import { isEmoji, getHexadecimalUnicode } from '../lib/helpers/unicode';
+
+describe('Creates HTML', () => {
+	const element = createNode('div');
+	const content = 'foo content';
+
+	beforeEach(() => {
+		element.innerHTML = HTML`
+			<div id="html-foo">
+				<span>${content}</span>
+			</div>
+		`;
+	});
+
+	it('is correctly created and contains content', () => {
+		expect(element.querySelector('#html-foo')).toBeDefined();
+		expect(element.querySelector('#html-foo span').textContent).toContain('foo content');
+	});
+});
 
 describe('Creating a node', () => {
 	let firstElement = null;
@@ -45,21 +61,38 @@ describe('Creating a node', () => {
 	});
 });
 
-describe('Creates HTML', () => {
-	const element = createNode('div');
-	const content = 'foo content';
+describe('Returns an array of properties from object', () => {
+	const object = {
+		lorem: { foo: 'bar', different: true, more: 'yay' },
+		ipsum: { foo: 'bar', different: false, more: 'yay' },
+		dolor: { foo: 'baz', different: true, more: 'yay' },
+		sit: { foo: 'bar', different: true, more: 'yay' },
+		amet: { foo: 'baz', different: false, more: 'yay' },
+		something: { foo: 'hello', different: true, more: 'yay' }
+	};
+	const foos = getArrayOfProp('foo', object);
+	const diffs = getArrayOfProp('different', object);
 
-	beforeEach(() => {
-		element.innerHTML = HTML`
-			<div id="html-foo">
-				<span>${content}</span>
-			</div>
-		`;
+	it('should be an array', () => {
+		expect(foos.length).toEqual(3);
+		expect(foos instanceof Array).toBe(true);
+		expect(diffs.length).toEqual(2);
+		expect(diffs instanceof Array).toBe(true);
 	});
 
-	it('is correctly created and contains content', () => {
-		expect(element.querySelector('#html-foo')).toBeDefined();
-		expect(element.querySelector('#html-foo span').textContent).toContain('foo content');
+	it('should contain', () => {
+		expect(foos).toContain('bar');
+		expect(foos).not.toContain('more');
+		expect(diffs).not.toContain('foo');
+	});
+});
+
+describe('Returns a sorted list of all emoji', () => {
+	const list = getListOfEmoji();
+
+	it('should have the correct types', () => {
+		expect(typeof list === 'object').toBe(true);
+		expect(list[Object.keys(list)[0]] instanceof Array).toBe(true);
 	});
 });
 
@@ -73,82 +106,14 @@ describe('Is valid emoji', () => {
 	});
 });
 
-describe('Receiving language objects', () => {
-	const allLanguages = getAllLanguages(true);
-	const specificLanguage = getLanguage('javascript');
+describe('Hexadecimal unicode from emoji', () => {
+	const unicode = getHexadecimalUnicode('💩');
 
-	it('returned all available language objects', () => {
-		expect(allLanguages.length).toBeGreaterThan(0);
-		expect(allLanguages instanceof Array).toBe(true);
+	it('is a string', () => {
+		expect(typeof unicode === 'string').toBe(true);
 	});
 
-	it('returns the correct language', () => {
-		expect(specificLanguage.all.languageName).toContain('JavaScript');
-	});
-});
-
-describe('Creating a CSS selector', () => {
-	let selector = null;
-	let css = null;
-
-	beforeEach(() => {
-		css = getLanguage('css').all;
-		selector = createSelector(css.languageSelector, {
-			emoji: css['@import'].emoji,
-			selector: css['@import'].selector,
-			pseudo: css['@import'].pseudo,
-			spacing: css['@import'].spacing
-		});
-	});
-
-	it('is a valid CSS selector', () => {
-		expect(typeof selector === 'string').toBe(true);
-		expect(selector).toContain('.source.css .keyword.at-rule.import::before { content: "📦 "; }');
-	});
-});
-
-describe('Create a valid <style> element', () => {
-	let elementDefault = null;
-	let elementCustom = null;
-
-	beforeEach(() => {
-		elementDefault = createStyleSheet(getLanguageSelectors());
-		elementCustom = createStyleSheet(getLanguageSelectors(), {
-			selector: 'emoji-class',
-			context: 'different-context',
-			priority: 'highest'
-		});
-	});
-
-	it('is a valid HTML element', () => {
-		expect(elementDefault instanceof HTMLElement).toBe(true);
-		expect(elementDefault.nodeName).toContain('STYLE');
-		expect(elementCustom instanceof HTMLElement).toBe(true);
-		expect(elementCustom.nodeName).toContain('STYLE');
-	});
-
-	it('has content', () => {
-		expect(typeof elementDefault.textContent === 'string').toBe(true);
-		expect(typeof elementCustom.textContent === 'string').toBe(true);
-	});
-
-	describe('Default configuration', () => {
-		it('has all default attributes', () => {
-			expect(elementDefault.classList.contains('emoji-syntax-stylesheet')).toBe(true);
-			expect(elementDefault.hasAttribute('context')).toBe(true);
-			expect(elementDefault.getAttribute('context')).toContain('atom-text-editor');
-			expect(elementDefault.hasAttribute('priority')).toBe(true);
-			expect(elementDefault.getAttribute('priority')).toContain('2');
-		});
-	});
-
-	describe('Custom configuration', () => {
-		it('has all custom attributes', () => {
-			expect(elementCustom.classList.contains('emoji-class')).toBe(true);
-			expect(elementCustom.hasAttribute('context')).toBe(true);
-			expect(elementCustom.getAttribute('context')).toContain('different-context');
-			expect(elementCustom.hasAttribute('priority')).toBe(true);
-			expect(elementCustom.getAttribute('priority')).toContain('highest');
-		});
+	it('returns the correct hexadecimal unicode', () => {
+		expect(unicode).toMatch('1f4a9');
 	});
 });

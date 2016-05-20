@@ -1,11 +1,14 @@
 'use babel';
 
 describe('Emoji Syntax', () => {
-	let atomStylesElement = null;
+	const atomStylesElement = atom.stylesElement;
 
 	beforeEach(() => {
-		atomStylesElement = atom.stylesElement;
 		atom.packages.activatePackage('emoji-syntax');
+	});
+
+	afterEach(() => {
+		atom.packages.deactivatePackage('emoji-syntax');
 	});
 
 	describe('when the package is activated', () => {

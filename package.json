@@ -24,12 +24,12 @@
   },
   "dependencies": {
     "configstore": "^2.0.0",
-    "emojilib": "^2.0.2"
+    "emojilib": "^2.0.2",
+    "event-kit": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "^2.8.0",
-    "eslint-config-airbnb": "^7.0.0",
-    "eslint-plugin-import": "^1.4.0",
-    "path-exists": "^3.0.0"
+    "eslint": "2.x",
+    "eslint-config-airbnb": "9.x",
+    "eslint-plugin-import": "1.x"
   }
 }

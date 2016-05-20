@@ -15,6 +15,7 @@
 	"plugins": ["import"],
 	"extends": "airbnb/base",
 	"rules": {
+		"import/no-unresolved": 0,
 		"indent": [2, "tab"],
 		"quotes": [2, "single"],
 		"linebreak-style": [2, "unix"],
@@ -25,6 +26,12 @@
 		],
 		"brace-style": [2, "stroustrup"],
 		"prefer-rest-params": 0,
-		"consistent-return": 0
+		"consistent-return": 0,
+		"no-param-reassign": [2, { "props": false }],
+		"valid-jsdoc": [2, {
+			"requireReturn": true,
+			"requireReturnDescription": false,
+			"requireParamDescription": false
+		}]
 	}
 }
