@@ -8,7 +8,7 @@ describe('Receiving language objects', () => {
 
 	it('returned all available language objects', () => {
 		expect(allLanguages.length).toBeGreaterThan(0);
-		expect(allLanguages instanceof Array).toBe(true);
+		expect(Array.isArray(allLanguages)).toBe(true);
 	});
 
 	it('returns the correct language', () => {
