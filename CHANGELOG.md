@@ -1,3 +1,6 @@
+## 1.2.2 (May 21st, 2016)
+* Fixed failed tests
+
 ## 1.2.1 (May 21st, 2016)
 * Fixed broken link to SVG images
 
