@@ -1,3 +1,6 @@
+## 1.2.1 (May 21st, 2016)
+* Fixed broken link to SVG images
+
 ## 1.2.0 (May 21st, 2016)
 * Added support for different emoji style sets _(Issue [#14](https://github.com/morkro/atom-emoji-syntax/issues/14))_
 * Refactored large parts of the code including custom elements, controllers and helper functions
