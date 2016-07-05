@@ -28,7 +28,7 @@
     "event-kit": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "2.x",
+    "eslint": "3.0.1",
     "eslint-config-airbnb": "9.x",
     "eslint-plugin-import": "1.x"
   }
