@@ -78,6 +78,8 @@ Each language has its own section which you can deactivate. Doing that, the enti
 
 If you want to contribute by either extending/improving a language set, adding a new language, fixing a bug or anything else you can do that by simply sending a pull request.
 
+[API documentation](https://doclets.io/morkro/atom-emoji-syntax/master) via Doclets.
+
 ## License :copyright:
 The code is available under [MIT License](https://github.com/morkro/atom-emoji-syntax/blob/master/LICENSE).
 
