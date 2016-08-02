@@ -30,11 +30,18 @@ delete foo.bar;
  * Keyword: function
  */
 var awesome = function () {
-   return 'not awesome';
+	return 'not awesome';
 };
 
 function calc_sales (units_a, units_b, units_c) {
-   return units_a * 79 + units_b * 129 + units_c * 699;
+	return units_a * 79 + units_b * 129 + units_c * 699;
+}
+
+/**
+ * Keyword: arrow function
+ */
+const arrow = () => {
+	return true
 }
 
 /**
@@ -57,10 +64,10 @@ myString  instanceof Object;
  * Keyword: yield
  */
 function* foo () {
-   let index = 0;
-   while (index <= 2) {
-      yield index++;
-   }
+	let index = 0;
+	while (index <= 2) {
+		yield index++;
+	}
 }
 
 /**
@@ -74,8 +81,8 @@ console.error('NO');
  * Keyword: method
  */
 class Wizard {
-   enableMagic() {
-     return true;
+	enableMagic() {
+	  return true;
   }
 }
 
