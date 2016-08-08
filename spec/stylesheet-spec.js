@@ -1,6 +1,6 @@
 'use babel'
 
-import languages from '../lib/get-languages'
+import languages from '../lib/language-data'
 import EmojiStyleSheet from '../lib/stylesheet'
 
 describe('Emoji StyleSheet Module', () => {

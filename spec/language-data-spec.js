@@ -1,6 +1,6 @@
 'use babel'
 
-import languages from '../lib/get-languages'
+import languages from '../lib/language-data'
 
 describe('Receiving language objects', () => {
 	const allLanguages = languages.getAll()

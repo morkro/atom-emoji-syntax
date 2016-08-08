@@ -1,7 +1,7 @@
 'use babel'
 
 import KeywordElement from '../lib/custom-elements/emoji-keyword'
-import languages from '../lib/get-languages'
+import languages from '../lib/language-data'
 
 /**
  * @todo Add functional testing. Right now there is only basic DOM testing.
