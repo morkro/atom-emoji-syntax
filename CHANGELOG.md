@@ -1,3 +1,8 @@
+## 1.3.0 (August 8th, 2016)
+* Added support for `arrow` keyword in JavaScript and updated language selectors after Atom update
+* Added way to overwrite a language defaults `selector`
+* Fixed minor issues introduced during development
+
 ## 1.2.2 (May 21st, 2016)
 * Fixed failed tests
 
