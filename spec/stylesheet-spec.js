@@ -1,23 +1,19 @@
 'use babel'
 
-import languages from '../lib/language-data'
+import { setLanguageStore, getLanguage } from '../lib/language-data'
 import EmojiStyleSheet from '../lib/stylesheet'
 
 describe('Emoji StyleSheet Module', () => {
-	beforeEach(() => {
-		atom.packages.activatePackage('emoji-syntax')
-	})
-
-	afterEach(() => {
-		atom.packages.deactivatePackage('emoji-syntax')
-	})
+	beforeEach(() => atom.packages.activatePackage('emoji-syntax'))
+	afterEach(() => atom.packages.deactivatePackage('emoji-syntax'))
 
 	describe('Creates a CSS selector', () => {
-		const css = languages.get('css').all
 		let selector = null
 		let content = null
 
 		beforeEach(() => {
+			setLanguageStore()
+			const css = getLanguage('css').all
 			content = EmojiStyleSheet.getContent()
 			selector = EmojiStyleSheet.createSelector({
 				language: css.languageSelector,

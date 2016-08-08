@@ -1,16 +1,18 @@
 'use babel'
 
 import KeywordElement from '../lib/custom-elements/emoji-keyword'
-import languages from '../lib/language-data'
+import { setLanguageStore, getLanguage } from '../lib/language-data'
 
 /**
  * @todo Add functional testing. Right now there is only basic DOM testing.
  */
 describe('<emoji-keyword>', () => {
-	const exampleLanguage = languages.get('javascript').all
+	let exampleLanguage = null
 	const element = new KeywordElement()
 
 	beforeEach(() => {
+		setLanguageStore()
+		exampleLanguage = getLanguage('javascript').all
 		element.initialize({
 			language: exampleLanguage.languageName,
 			selector: exampleLanguage.languageSelector,

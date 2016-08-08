@@ -1,17 +1,22 @@
 'use babel'
 
-import languages from '../lib/language-data'
+import {
+	setLanguageStore,
+	getLanguage,
+	getAllLanguages
+} from '../lib/language-data'
 
 describe('Receiving language objects', () => {
-	const allLanguages = languages.getAll()
-	const specificLanguage = languages.get('javascript')
+	beforeEach(setLanguageStore)
 
 	it('returned all available language objects', () => {
-		expect(allLanguages.length).toBeGreaterThan(0)
+		const allLanguages = getAllLanguages()
 		expect(Array.isArray(allLanguages)).toBe(true)
+		expect(allLanguages.length).toBeGreaterThan(0)
 	})
 
 	it('returns the correct language', () => {
+		const specificLanguage = getLanguage('javascript')
 		expect(specificLanguage.all.languageName).toContain('JavaScript')
 	})
 })
