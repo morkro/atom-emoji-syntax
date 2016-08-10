@@ -1,7 +1,7 @@
 'use babel'
 
 import { setLanguageStore, getLanguage } from '../lib/language-data'
-import EmojiStyleSheet from '../lib/stylesheet'
+import * as _ from '../lib/stylesheet'
 
 describe('Emoji StyleSheet Module', () => {
 	beforeEach(() => atom.packages.activatePackage('emoji-syntax'))
@@ -14,8 +14,8 @@ describe('Emoji StyleSheet Module', () => {
 		beforeEach(() => {
 			setLanguageStore()
 			const css = getLanguage('css').all
-			content = EmojiStyleSheet.getContent()
-			selector = EmojiStyleSheet.createSelector({
+			content = _.getContent()
+			selector = _.createSelector({
 				language: css.languageSelector,
 				emoji: css['@import'].emoji,
 				selector: css['@import'].selector,
@@ -38,8 +38,8 @@ describe('Emoji StyleSheet Module', () => {
 		let elementCustom = null
 
 		beforeEach(() => {
-			elementDefault = EmojiStyleSheet.createElement()
-			elementCustom = EmojiStyleSheet.createElement({
+			elementDefault = _.createStyleSheet()
+			elementCustom = _.createStyleSheet({
 				context: 'different-context',
 				priority: 'highest'
 			})
@@ -78,17 +78,13 @@ describe('Emoji StyleSheet Module', () => {
 
 	describe('Adds, removes, updates stylesheet', () => {
 		it('should add stylesheet', () => {
-			EmojiStyleSheet.add()
-			expect(EmojiStyleSheet.exists()).toBe(true)
+			_.addStyleSheet()
+			expect(_.styleSheetExists()).toBe(true)
 		})
 
 		it('should remove stylesheet', () => {
-			EmojiStyleSheet.remove()
-			expect(EmojiStyleSheet.exists()).toBe(false)
-		})
-
-		it('should return element', () => {
-			expect(EmojiStyleSheet.get().nodeName === 'STYLE').toBe(true)
+			_.removeStyleSheet()
+			expect(_.styleSheetExists()).toBe(false)
 		})
 	})
 })
