@@ -1,10 +1,13 @@
 'use babel'
 
-import HTML from '../lib/helpers/create-html'
-import createNode from '../lib/helpers/create-node'
-import getArrayOfProp from '../lib/helpers/get-array-of-props'
-import getListOfEmoji from '../lib/helpers/get-list-of-emoji'
-import { isEmoji, getHexadecimalUnicode } from '../lib/helpers/unicode'
+import {
+	HTML,
+	createNode,
+	getArrayOfProp,
+	getListOfEmoji,
+	isEmoji,
+	getHexadecimalUnicode
+} from '../lib/helpers'
 
 describe('Creates HTML', () => {
 	const element = createNode('div')

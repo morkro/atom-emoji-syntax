@@ -1,6 +1,6 @@
 'use babel'
 
-import KeywordElement from '../lib/custom-elements/emoji-keyword'
+import { KeywordElement } from '../lib/custom-elements'
 import { setLanguageStore, getLanguage } from '../lib/language-data'
 
 /**

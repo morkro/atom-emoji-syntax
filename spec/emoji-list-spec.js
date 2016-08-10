@@ -1,6 +1,6 @@
 'use babel'
 
-import ListElement from '../lib/custom-elements/emoji-list'
+import { ListElement } from '../lib/custom-elements'
 
 describe('<emoji-list>', () => {
 	const element = new ListElement()
