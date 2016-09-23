@@ -8,6 +8,9 @@ Getting bored of your code? Already tried out hundreds of syntax highlighter but
 
 An atom package adding emoji to language keywords.
 
+## State Of Project :white_check_mark: _[active]_
+The project is still in **active development** even though there hasn't been much activity from me lately. I am working on updating several internal parts of the codebase and adding new features ([#31](https://github.com/morkro/atom-emoji-syntax/issues/31), [#16](https://github.com/morkro/atom-emoji-syntax/issues/16)).
+
 ## Installation
 Install Emoji Syntax either via `apm`
 ```
@@ -22,7 +25,7 @@ or search for `emoji syntax` in your Atom settings panel.
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
-## Supported languages :microphone:
+## Supported Languages :microphone:
 Only official language packages are supported by Emoji Syntax. Other language packages might use different selectors to highlight syntax and might not work as intended.
 
 _Note: some screenshots show only a fraction of available emoji per language._
