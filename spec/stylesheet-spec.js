@@ -13,14 +13,14 @@ describe('Emoji StyleSheet Module', () => {
 
 		beforeEach(() => {
 			setLanguageStore()
-			const css = getLanguage('css').all
+			const { userSettings, internalSettings } = getLanguage('css')
 			content = _.getContent()
 			selector = _.createSelector({
-				language: css.languageSelector,
-				emoji: css['@import'].emoji,
-				selector: css['@import'].selector,
-				pseudo: css['@import'].pseudo,
-				spacing: css['@import'].spacing
+				language: internalSettings.selector,
+				emoji: userSettings.all['@import'].emoji,
+				selector: userSettings.all['@import'].selector,
+				pseudo: userSettings.all['@import'].pseudo,
+				spacing: userSettings.all['@import'].spacing
 			})
 		})
 

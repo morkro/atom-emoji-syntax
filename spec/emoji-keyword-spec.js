@@ -12,12 +12,12 @@ describe('<emoji-keyword>', () => {
 
 	beforeEach(() => {
 		setLanguageStore()
-		exampleLanguage = getLanguage('javascript').all
+		exampleLanguage = getLanguage('javascript')
 		element.initialize({
-			language: exampleLanguage.languageName,
-			selector: exampleLanguage.languageSelector,
+			language: exampleLanguage.name,
+			selector: exampleLanguage.internalSettings.selector,
 			keyword: 'import',
-			content: exampleLanguage.import
+			content: exampleLanguage.userSettings.all.import
 		})
 	})
 
