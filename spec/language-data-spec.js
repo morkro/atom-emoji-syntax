@@ -16,7 +16,7 @@ describe('Receiving language objects', () => {
 	})
 
 	it('returns the correct language', () => {
-		const specificLanguage = getLanguage('javascript')
-		expect(specificLanguage.all.languageName).toContain('JavaScript')
+		const javascript = getLanguage('javascript')
+		expect(javascript.name).toContain('JavaScript')
 	})
 })
