@@ -5,17 +5,17 @@
  * Tab bar
  */
 .icon-emoji-syntax::before {
-	content: '🔧';
+	content: '🛠';
 	display: inline-block;
 }
 
 /**
- * Emoji settings window
+ * <emojisyntax-settings> - Emoji settings window
  */
-emoji-settings {
+emojisyntax-settings {
 	overflow: scroll;
 	background-color: @base-background-color;
-	padding: 25px 10%;
+	padding: 25px 5%;
 
 	&.emoji-overlay header,
 	&.emoji-overlay atom-panel {
@@ -41,10 +41,6 @@ emoji-settings {
 			font-style: italic;
 			color: @text-color-subtle;
 		}
-
-		.toggle-languages {
-			height: 30px;
-		}
 	}
 
 	.settings-overlay {
@@ -56,12 +52,21 @@ emoji-settings {
 		top: 0;
 		left: -10%;
 	}
+
+	.settings-content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.settings-config {
+		width: 70%;
+	}
 }
 
 /**
- * Emoji List
+ * <emojisyntax-catalog> - List of all emoji
  */
-emoji-list {
+emojisyntax-catalog {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -162,9 +167,31 @@ emoji-list {
 }
 
 /**
+ * <emojisyntax-directory> - List of languages
+ */
+emojisyntax-directory {
+	width: 27%;
+	border-right: 2px solid @background-color-highlight;
+	position: relative;
+
+	li {
+		margin-botton: 15px;
+		padding-right: 2vw;
+	}
+
+	input {
+		margin-right: 10px;
+	}
+}
+
+/**
  * Emoji Panel
  */
-emoji-settings atom-panel {
+emojisyntax-settings atom-panel {
+	&:not(:first-of-type) {
+		display: none;
+	}
+
 	&:not(:last-of-type) {
 		margin-bottom: 15px;
 	}
@@ -225,9 +252,9 @@ emoji-settings atom-panel {
 }
 
 /**
- * Keyword view
+ * <emojisyntax-keyword> - Keyword view
  */
-emoji-keyword {
+emojisyntax-keyword {
 	display: block;
 	line-height: @component-line-height;
 	background: @input-background-color;
