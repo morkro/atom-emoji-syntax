@@ -59,7 +59,7 @@ emojisyntax-settings {
 	}
 
 	.settings-config {
-		width: 70%;
+		width: 75%;
 	}
 }
 
@@ -170,17 +170,29 @@ emojisyntax-catalog {
  * <emojisyntax-directory> - List of languages
  */
 emojisyntax-directory {
-	width: 27%;
-	border-right: 2px solid @background-color-highlight;
+	width: 22%;
 	position: relative;
 
 	li {
-		margin-botton: 15px;
-		padding-right: 2vw;
+		margin-bottom: 15px;
+	}
+
+	button {
+		margin-left: 15px;
+		&.selected:before {
+			background-color: transparent !important;
+		}
 	}
 
 	input {
-		margin-right: 10px;
+		width: 20px !important;
+		height: 20px !important;
+		cursor: pointer;
+
+		&:before, &:after {
+			top: 14px !important;
+			left: 7.4px !important;
+		}
 	}
 }
 
@@ -194,15 +206,6 @@ emojisyntax-settings atom-panel {
 
 	&:not(:last-of-type) {
 		margin-bottom: 15px;
-	}
-
-	&.is-collapsed {
-		border-radius: @component-border-radius;
-		overflow: hidden;
-
-		.panel-body {
-			display: none;
-		}
 	}
 
 	&.is-inactive {
@@ -241,7 +244,6 @@ emojisyntax-settings atom-panel {
 		color: @text-color-highlight;
 		margin: 0;
 		font-weight: bold;
-		cursor: pointer;
 		padding: 15px;
 	}
 
