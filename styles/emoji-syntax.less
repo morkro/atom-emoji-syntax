@@ -18,7 +18,7 @@ emojisyntax-settings {
 	padding: 25px 5%;
 
 	&.emoji-overlay header,
-	&.emoji-overlay atom-panel {
+	&.emoji-overlay .settings-content {
 		opacity: 0.4;
 		pointer-events: none;
 	}
@@ -50,12 +50,14 @@ emojisyntax-settings {
 		position: absolute;
 		z-index: 2;
 		top: 0;
-		left: -10%;
+		left: 0;
 	}
 
 	.settings-content {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		z-index: 1;
 	}
 
 	.settings-config {
@@ -201,15 +203,21 @@ emojisyntax-directory {
 /**
  * Emoji Panel
  */
-emojisyntax-settings atom-panel {
+emojisyntax-panel {
+	border-radius: @component-border-radius;
 	margin-bottom: 15px;
+	overflow: hidden;
+	display: block;
+	position: relative;
 
 	&:not(:first-of-type) {
 		display: none;
 	}
 
 	&.is-inactive {
-		.panel-body::before {
+		opacity: .3;
+
+		&::before {
 			content: "";
 			position: absolute;
 			width: 100%;
@@ -217,19 +225,16 @@ emojisyntax-settings atom-panel {
 			z-index: 1;
 			background: transparent;
 		}
-
-		emoji-keyword {
-			opacity: .3;
-		}
 	}
 
-	.panel-heading {
+	header {
 		border: none;
 		background: @background-color-selected;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 0;
+		margin: 0;
 
 		.btn {
 			margin-right: 15px;
@@ -243,9 +248,39 @@ emojisyntax-settings atom-panel {
 		padding: 15px;
 	}
 
-	.panel-body {
+	table {
+		width: 100%;
+		background-color: @tool-panel-background-color;
 		position: relative;
 		padding: @component-padding / 2;
+		border-bottom-right-radius: @component-border-radius;
+		border-bottom-left-radius: @component-border-radius;
+	}
+
+	table th,
+	table td {
+		text-align: center;
+	}
+
+	thead th {
+		padding: 10px;
+		border-bottom: 1px solid @inset-panel-background-color;
+	}
+
+	table td {
+		background-color: @input-background-color;
+	}
+
+	table tr:not(:last-of-type) {
+		border-bottom: 1px solid @inset-panel-background-color;
+	}
+
+	.badge {
+		font-size: 16px !important;
+		display: inline-flex;
+		padding: 7px 8px 3px;
+		cursor: pointer;
+		border: 0;
 	}
 }
 
