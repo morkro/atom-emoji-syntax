@@ -6,7 +6,8 @@
   "author": "Moritz Kröger <write@morkro.de>",
   "keywords": [
     "emoji",
-    "syntax"
+    "syntax",
+    "language"
   ],
   "repository": {
     "type": "git",
