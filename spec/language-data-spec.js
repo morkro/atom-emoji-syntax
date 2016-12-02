@@ -23,10 +23,9 @@ describe('Receiving language objects', () => {
 	it('default settings are correct', () => {
 		const defaultSettings = _.getDefaultSettings('python')
 		Object.keys(defaultSettings).forEach(setting => {
-			expect(Object.is(
-				defaultSettings[setting],
-				python.userSettings[setting]
-			)).toBe(true)
+			expect(
+				Object.is(defaultSettings[setting], python.userSettings[setting])
+			).toBe(true)
 		})
 	})
 })

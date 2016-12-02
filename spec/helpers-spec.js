@@ -4,9 +4,10 @@ import {
 	HTML,
 	createNode,
 	getArrayOfProp,
+	getHexadecimalUnicode,
 	getListOfEmoji,
-	isEmoji,
-	getHexadecimalUnicode
+	getImageSourcePath,
+	isEmoji
 } from '../lib/helpers'
 
 describe('Creates HTML', () => {
@@ -112,11 +113,31 @@ describe('Is valid emoji', () => {
 describe('Hexadecimal unicode from emoji', () => {
 	const unicode = getHexadecimalUnicode('💩')
 
+	it('returns undefined when no paramters are passed', () => {
+		expect(getHexadecimalUnicode()).toBeUndefined()
+	})
+
 	it('is a string', () => {
 		expect(typeof unicode === 'string').toBe(true)
 	})
 
 	it('returns the correct hexadecimal unicode', () => {
 		expect(unicode).toMatch('1f4a9')
+	})
+})
+
+describe('Get emoji source path', () => {
+	it('returns undefined when no parameters are passed', () => {
+		expect(getImageSourcePath()).toBeUndefined()
+	})
+
+	it('returns undefined when folder name is native', () => {
+		expect(getImageSourcePath({ emoji: '🔥' })).toBeUndefined()
+	})
+
+	it('returns the correct source path', () => {
+		const folderName = 'twemoji'
+		const path = getImageSourcePath({ folderName, emoji: '🔥' })
+		expect(path).toEqual('atom://emoji-syntax/styles/twemoji/1f525.svg')
 	})
 })
