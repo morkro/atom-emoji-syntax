@@ -1,6 +1,6 @@
 'use babel'
 
-import { CatalogElement } from '../lib/custom-elements'
+import { CatalogElement } from '../../lib/custom-elements'
 
 describe('<emojisyntax-catalog>', () => {
 	const $catalog = new CatalogElement()

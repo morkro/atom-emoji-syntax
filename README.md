@@ -9,7 +9,7 @@ Getting bored of your code? Already tried out hundreds of syntax highlighter but
 An atom package adding emoji to language keywords.
 
 ## State Of Project :white_check_mark: _[active]_
-The project is still in **active development** even though there hasn't been much activity from me lately. I am working on updating several internal parts of the codebase and adding new features ([#31](https://github.com/morkro/atom-emoji-syntax/issues/31), [#16](https://github.com/morkro/atom-emoji-syntax/issues/16)).
+The project is in **active development**.
 
 ## Installation
 Install Emoji Syntax either via `apm`

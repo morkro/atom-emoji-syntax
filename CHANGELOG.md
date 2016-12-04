@@ -1,3 +1,15 @@
+## 1.5.0 (December 5th, 2016)
+* Introducing new settings page layout
+* Added option to set a language back to default _(Issue [#5](https://github.com/morkro/atom-emoji-syntax/issues/5))_
+* Fixed weird line height occuring in custom emoji styles _(Issue [#34](https://github.com/morkro/atom-emoji-syntax/issues/34))_
+* Fixed an issue with error messages popping up in the Developer Tools _(Issue [#35](https://github.com/morkro/atom-emoji-syntax/issues/35))_
+* Some more architectural package updates
+* Added more tests
+
+## 1.4.0 (November 16th, 2016)
+* Updated some of the internal logic for package and user settings management.
+* Cleaned up architecture
+
 ## 1.3.0 (August 8th, 2016)
 * Added support for `arrow` keyword in JavaScript and updated language selectors after Atom update
 * Added way to overwrite a language defaults `selector`
