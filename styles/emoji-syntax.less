@@ -5,20 +5,20 @@
  * Tab bar
  */
 .icon-emoji-syntax::before {
-	content: '🔧';
+	content: '🛠';
 	display: inline-block;
 }
 
 /**
- * Emoji settings window
+ * <emojisyntax-settings> - Emoji settings window
  */
-emoji-settings {
+emojisyntax-settings {
 	overflow: scroll;
 	background-color: @base-background-color;
-	padding: 25px 10%;
+	padding: 25px 5%;
 
 	&.emoji-overlay header,
-	&.emoji-overlay atom-panel {
+	&.emoji-overlay .settings-content {
 		opacity: 0.4;
 		pointer-events: none;
 	}
@@ -41,10 +41,6 @@ emoji-settings {
 			font-style: italic;
 			color: @text-color-subtle;
 		}
-
-		.toggle-languages {
-			height: 30px;
-		}
 	}
 
 	.settings-overlay {
@@ -54,14 +50,25 @@ emoji-settings {
 		position: absolute;
 		z-index: 2;
 		top: 0;
-		left: -10%;
+		left: 0;
+	}
+
+	.settings-content {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		z-index: 1;
+	}
+
+	.settings-config {
+		width: 75%;
 	}
 }
 
 /**
- * Emoji List
+ * <emojisyntax-catalog> - List of all emoji
  */
-emoji-list {
+emojisyntax-catalog {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -162,51 +169,76 @@ emoji-list {
 }
 
 /**
- * Emoji Panel
+ * <emojisyntax-directory> - List of languages
  */
-emoji-settings atom-panel {
-	&:not(:last-of-type) {
+emojisyntax-directory {
+	width: 22%;
+	position: relative;
+
+	li {
 		margin-bottom: 15px;
 	}
 
-	&.is-collapsed {
-		border-radius: @component-border-radius;
-		overflow: hidden;
+	button {
+		margin-left: 15px;
+		position: relative;
 
-		.panel-body {
-			display: none;
+		&.selected:before {
+			background-color: transparent !important;
 		}
 	}
 
+	input {
+		width: 20px !important;
+		height: 20px !important;
+		cursor: pointer;
+
+		&:before, &:after {
+			top: 14px !important;
+			left: 8.4px !important;
+		}
+	}
+}
+
+/**
+ * Emoji Panel
+ */
+emojisyntax-panel {
+	border-radius: @component-border-radius;
+	margin-bottom: 15px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+
+	&:not(:first-of-type) {
+		display: none;
+	}
+
 	&.is-inactive {
-		.panel-body::before {
+		opacity: .3;
+
+		&::before {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			z-index: 1;
 			background: transparent;
-		}
-
-		emoji-keyword {
-			opacity: .3;
+			cursor: not-allowed;
 		}
 	}
 
-	.panel-heading {
+	header {
 		border: none;
 		background: @background-color-selected;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 0;
+		margin: 0;
 
 		.btn {
-			top: 0;
-			width: 50px;
-			height: 50px;
-
-			&::before { margin-right: 0; }
+			margin-right: 15px;
 		}
 	}
 
@@ -214,26 +246,77 @@ emoji-settings atom-panel {
 		color: @text-color-highlight;
 		margin: 0;
 		font-weight: bold;
-		cursor: pointer;
 		padding: 15px;
 	}
 
-	.panel-body {
+	table {
+		width: 100%;
+		background-color: @tool-panel-background-color;
 		position: relative;
-		padding: @component-padding;
+		padding: @component-padding / 2;
+		border-bottom-right-radius: @component-border-radius;
+		border-bottom-left-radius: @component-border-radius;
+	}
+
+	table th,
+	table td {
+		text-align: center;
+	}
+
+	thead th {
+		padding: 10px;
+		border-bottom: 1px solid @inset-panel-background-color;
+	}
+
+	table td {
+		background-color: @input-background-color;
+	}
+
+	table tr:not(:last-of-type) {
+		border-bottom: 1px solid @inset-panel-background-color;
+	}
+
+	.badge {
+		font-size: 16px !important;
+		display: inline-flex;
+		padding: 7px 8px 3px;
+		cursor: pointer;
+		border: 0;
+	}
+
+	[emoji-style="native"] & .emoji-native {
+		display: block;
+	}
+
+	.emoji-native {
+		display: none;
+		font-size: 16px;
+	}
+
+	[emoji-style="native"] & .emoji-unicode {
+		display: none;
+	}
+
+	.emoji-unicode {
+		display: block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
 	}
 }
 
 /**
- * Keyword view
+ * <emojisyntax-keyword> - Keyword view
  */
-emoji-keyword {
+emojisyntax-keyword {
 	display: block;
 	line-height: @component-line-height;
 	background: @input-background-color;
 
 	&:not(:last-of-type) {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 	}
 
 	h3 {
@@ -241,23 +324,15 @@ emoji-keyword {
 		display: inline-block;
 	}
 
-	.emoji-preview {
-		background: @input-background-color;
-		border-radius: @component-border-radius;
-		margin-left: @component-padding;
-		padding: @component-padding;
-		width: 30%;
-	}
-
 	.emoji-options {
 		display: flex;
 		width: 100%;
 		align-items: center;
-		padding: @component-padding;
+		justify-content: space-around;
+		padding: @component-padding / 2;
 
 		div {
 			display: inline-block;
-			margin-right: @component-padding;
 			margin-bottom: 0;
 		}
 
@@ -270,12 +345,6 @@ emoji-keyword {
 				height: 20px;
 			}
 		}
-	}
-
-	.option-activate {
-		padding-right: 20px;
-		margin-right: 20px !important;
-		border-right: 5px solid @background-color-selected;
 	}
 
 	.badge {
