@@ -1,7 +1,7 @@
 'use babel'
 
-import { SettingsElement } from '../lib/custom-elements'
-import EmojiSettings from '../lib/settings'
+import { SettingsElement } from '../../lib/custom-elements'
+import EmojiSettings from '../../lib/settings'
 
 describe('<emojisyntax-settings>', () => {
 	beforeEach(() => atom.packages.activatePackage('emoji-syntax'))

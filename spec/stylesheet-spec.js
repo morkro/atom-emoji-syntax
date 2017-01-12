@@ -46,9 +46,9 @@ describe('Emoji StyleSheet Module', () => {
 		})
 
 		it('is a valid HTML element', () => {
-			expect(elementDefault instanceof HTMLElement).toBe(true)
+			expect(elementDefault).toBeInstanceOf(HTMLElement)
 			expect(elementDefault.nodeName).toContain('STYLE')
-			expect(elementCustom instanceof HTMLElement).toBe(true)
+			expect(elementCustom).toBeInstanceOf(HTMLElement)
 			expect(elementCustom.nodeName).toContain('STYLE')
 		})
 

@@ -3,7 +3,7 @@
 import * as _ from '../lib/language-data'
 import { python } from '../lib/languages'
 
-describe('Receiving language objects', () => {
+describe('Working with language objects', () => {
 	beforeEach(_.setLanguageStore)
 
 	it('getAllLanguages() returns filtered & unfiltered language objects', () => {
