@@ -8,8 +8,7 @@ function foo ($arg_1, $arg_2, /* ..., */ $arg_n) {
 }
 
 /**
- * Keywords: echo,
- * 			 print
+ * Keywords: echo, print
  */
 void echo ( string $arg1 [, string $... ] )
 int print ( string $arg )
