@@ -1,3 +1,10 @@
+## 1.5.2 (January 13th, 2017)
+* Fixed another issue, related to the previous Atom version update
+* Updated README
+
+## 1.5.1 (January 12th, 2017)
+* Fixed issue introduced by new Atom version
+
 ## 1.5.0 (December 5th, 2016)
 * Introducing new settings page layout
 * Added option to set a language back to default _(Issue [#5](https://github.com/morkro/atom-emoji-syntax/issues/5))_

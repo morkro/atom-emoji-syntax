@@ -42,25 +42,41 @@ _This package does not actually add emoji characters to your code—don't worry�
 ## Icon Sets
 _Note: not all emoji are supported in each of the custom sets yet!_
 <table>
-	<tr>
-		<th>Native</th>
-		<th>Twemoji</th>
-	</tr>
-	<tr>
-		<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/style-native.png" alt="Native"></td>
-		<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/style-twemoji.png" alt="Twemoji"></td>
-	</tr>
-	<tr>
-		<th>Noto Emoji</th>
-		<th>EmojiOne™</th>
-	</tr>
-	<tr>
-		<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/style-noto-emoji.png" alt="Noto Emoji"></td>
-		<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/style-emojione.png" alt="EmojiOne™"></td>
-	</tr>
+	<thead>
+		<tr>
+			<th style="width:15%;">Emoji style</th>
+			<th>Preview</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Native</td>
+			<td>
+				<img src="resources/style-native.png" alt="Native">
+			</td>
+		</tr>
+		<tr>
+			<td>Twemoji</td>
+			<td>
+				<img src="resources/style-twemoji.png" alt="Twemoji">
+			</td>
+		</tr>
+		<tr>
+			<td>Noto Emoji</td>
+			<td>
+				<img src="resources/style-noto-emoji.png" alt="Noto Emoji">
+			</td>
+		</tr>
+		<tr>
+			<td>EmojiOne™</td>
+			<td>
+				<img src="resources/style-emojione.png" alt="EmojiOne™">
+			</td>
+		</tr>
+	</tbody>
 </table>
 
-## Package Settings :wrench:
+## Settings :wrench:
 
 | Name                                                           | Default |                 Options                |
 |:---------------------------------------------------------------|:-------:|:--------------------------------------:|
