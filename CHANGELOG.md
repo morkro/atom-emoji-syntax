@@ -1,3 +1,6 @@
+## 1.5.3 (January 13th, 2017)
+_A GitHub/Atom.io Server outage caused some trouble while I was just publishing the package. This fixed it._
+
 ## 1.5.2 (January 13th, 2017)
 * Fixed another issue, related to the previous Atom version update
 * Updated README
