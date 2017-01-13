@@ -28,14 +28,41 @@ or search for `emoji syntax` in your Atom settings panel.
 ## Supported Languages :microphone:
 Only official language packages are supported by Emoji Syntax. Other language packages might use different selectors to highlight syntax and might not work as intended.
 
-_Note: some screenshots show only a fraction of available emoji per language._
 
-JavaScript `.js` | CSS `.css`
----------- | --- | ----
-<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/javascript-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/css-preview.png'>
-**Sass `.scss, .sass`** | **PHP `.php`**
-<img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/scss-preview.png'> | <img src='https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/php-preview.png'>
-**Python `.py`** | **TypeScript `.ts`**
+<table>
+	<thead>
+		<tr>
+			<th>Language</th>
+			<th>Screenshot</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>JavaScript</td>
+			<td><a href="resources/javascript-preview.png" target="_blank">Preview</a></td>
+		</tr>
+		<tr>
+			<td>TypeScript</td>
+			<td><a href="resources/typescript-preview.png" target="_blank">Preview</a></td>
+		</tr>
+		<tr>
+			<td>CSS</td>
+			<td><a href="resources/css-preview.png" target="_blank">Preview</a></td>
+		</tr>
+		<tr>
+			<td>Sass</td>
+			<td><a href="resources/scss-preview.png" target="_blank">Preview</a></td>
+		</tr>
+		<tr>
+			<td>PHP</td>
+			<td><a href="resources/php-preview.png" target="_blank">Preview</a></td>
+		</tr>
+		<tr>
+			<td>Python</td>
+			<td><a href="resources/python-preview.png" target="_blank">Preview</a></td>
+		</tr>
+	</tbody>
+</table>
 
 _This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
 
