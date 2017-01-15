@@ -1,4 +1,21 @@
 /**
+ * Keyword: import
+ */
+import { Greeter } from 'greeter'
+
+/**
+ * Keyword: export
+ */
+export { name1, name2, nameN }
+export default function () {}
+
+/**
+ * Keyword: class
+ */
+class Foo {}
+const foo = class Foo {}
+
+/**
  * Keyword: variable
  */
 var user1 = "User";
