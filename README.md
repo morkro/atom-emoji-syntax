@@ -34,8 +34,8 @@ Only official language packages are supported. Other language packages might use
 	<thead>
 		<tr>
 			<th>Language</th>
-			<th style="width:60%;">Preview</th>
-			<th>Keywords</th>
+			<th>Preview</th>
+			<th style="width:20%;">Keywords</th>
 		</tr>
 	</thead>
 	<tbody>
