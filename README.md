@@ -79,25 +79,25 @@ _Note: not all emoji are supported in each of the custom sets yet!_
 		<tr>
 			<td>Native</td>
 			<td>
-				<img src="resources/style-preview-native.png" alt="Native">
+				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-native.png" alt="Native">
 			</td>
 		</tr>
 		<tr>
 			<td>Twemoji</td>
 			<td>
-				<img src="resources/style-preview-twemoji.png" alt="Twemoji">
+				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-twemoji.png" alt="Twemoji">
 			</td>
 		</tr>
 		<tr>
 			<td>Noto Emoji</td>
 			<td>
-				<img src="resources/style-preview-noto-emoji.png" alt="Noto Emoji">
+				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-noto-emoji.png" alt="Noto Emoji">
 			</td>
 		</tr>
 		<tr>
 			<td>EmojiOne™</td>
 			<td>
-				<img src="resources/style-preview-emojione.png" alt="EmojiOne™">
+				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-emojione.png" alt="EmojiOne™">
 			</td>
 		</tr>
 	</tbody>
