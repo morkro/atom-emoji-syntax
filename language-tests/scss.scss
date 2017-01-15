@@ -39,6 +39,24 @@
 }
 
 /**
+ * Keyword: @each
+ */
+@each $color-name, $color-code in $primary-colors {
+  .color-#{$color-name} {
+    background: $color-code;
+  }
+}
+
+/**
+ * Keyword: @while
+ */
+$i: 6;
+@while $i > 0 {
+	.item-#{$i} { width: 2em * $i; }
+	$i: $i - 2;
+}
+
+/**
  * Keyword: @function
  */
 @function calc-percent($target, $container) {
