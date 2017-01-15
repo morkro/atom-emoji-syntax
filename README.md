@@ -40,27 +40,27 @@ Only official language packages are supported. Other language packages might use
 	<tbody>
 		<tr>
 			<td>JavaScript</td>
-			<td><img src="resources/javascript-preview.png" title="JavaScript" alt="JavaScript"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/javascript-preview.png" title="JavaScript" alt="JavaScript"></td>
 		</tr>
 		<tr>
 			<td>TypeScript</td>
-			<td><img src="resources/typescript-preview.png" title="TypeScript" alt="TypeScript"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/typescript-preview.png" title="TypeScript" alt="TypeScript"></td>
 		</tr>
 		<tr>
 			<td>CSS</td>
-			<td><img src="resources/css-preview.png" title="CSS" alt="CSS"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/css-preview.png" title="CSS" alt="CSS"></td>
 		</tr>
 		<tr>
 			<td>Sass</td>
-			<td><img src="resources/scss-preview.png" title="SCSS" alt="SCSS"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/scss-preview.png" title="SCSS" alt="SCSS"></td>
 		</tr>
 		<tr>
 			<td>PHP</td>
-			<td><img src="resources/php-preview.png" title="PHP" alt="PHP"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/php-preview.png" title="PHP" alt="PHP"></td>
 		</tr>
 		<tr>
 			<td>Python</td>
-			<td><img src="resources/python-preview.png" title="Python" alt="Python"></td>
+			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/python-preview.png" title="Python" alt="Python"></td>
 		</tr>
 	</tbody>
 </table>
