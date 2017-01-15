@@ -1,3 +1,11 @@
+## 1.6.0 (January 15th, 2017)
+* Added more language keywords
+	* JavaScript: `class`, `default`
+	* CSS: `@namespace`, `@charset`
+	* Sass: `@each`, `@while`
+	* Python: `def`, `class`, `nonlocal`
+	* TypeScript: `class`, `export`, `import`, `typeof`, `instanceof`, `console`
+
 ## 1.5.3 (January 13th, 2017)
 _A GitHub/Atom.io Server outage caused some trouble while I was just publishing the package. This fixed it._
 

@@ -1,6 +1,6 @@
-<img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;">
+<h1><img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;"></h1>
+
 <a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a> <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg">
----
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
@@ -25,46 +25,45 @@ or search for `emoji syntax` in your Atom settings panel.
 - Define position and spacing of an emoji around the keyword
 - Disable entire languages or only specific keywords
 
-## Supported Languages :microphone:
-Only official language packages are supported by Emoji Syntax. Other language packages might use different selectors to highlight syntax and might not work as intended.
+_This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
 
+## Supported Languages :microphone:
+Only official language packages are supported. Other language packages might use different selectors to highlight syntax and not work as intended.
 
 <table>
 	<thead>
 		<tr>
 			<th>Language</th>
-			<th>Screenshot</th>
+			<th>Preview</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>JavaScript</td>
-			<td><a href="resources/javascript-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/javascript-preview.png" title="JavaScript" alt="JavaScript"></td>
 		</tr>
 		<tr>
 			<td>TypeScript</td>
-			<td><a href="resources/typescript-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/typescript-preview.png" title="TypeScript" alt="TypeScript"></td>
 		</tr>
 		<tr>
 			<td>CSS</td>
-			<td><a href="resources/css-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/css-preview.png" title="CSS" alt="CSS"></td>
 		</tr>
 		<tr>
 			<td>Sass</td>
-			<td><a href="resources/scss-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/scss-preview.png" title="SCSS" alt="SCSS"></td>
 		</tr>
 		<tr>
 			<td>PHP</td>
-			<td><a href="resources/php-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/php-preview.png" title="PHP" alt="PHP"></td>
 		</tr>
 		<tr>
 			<td>Python</td>
-			<td><a href="resources/python-preview.png" target="_blank">Preview</a></td>
+			<td><img src="resources/python-preview.png" title="Python" alt="Python"></td>
 		</tr>
 	</tbody>
 </table>
-
-_This package does not actually add emoji characters to your code—don't worry—your linter or tests won't go crazy!_
 
 ## Icon Sets
 _Note: not all emoji are supported in each of the custom sets yet!_

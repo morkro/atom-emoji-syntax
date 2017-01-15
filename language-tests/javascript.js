@@ -16,6 +16,17 @@ export { name1 as default }
 export { import1 as name1, import2 as name2, nameN } from 'module'
 
 /**
+ * Keyword: default
+ */
+export default { foo: true }
+
+/**
+ * Keyword: class
+ */
+class Foo {}
+const foo = class Foo {}
+
+/**
  * Keyword: delete
  */
 var trees = ['redwood', 'bay', 'cedar', 'oak', 'maple']

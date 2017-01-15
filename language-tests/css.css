@@ -42,6 +42,20 @@
 }
 
 /**
+ * Keyword: @namespace
+ */
+@namespace url(XML-namespace-URL);
+@namespace "XML-namespace-URL";
+@namespace prefix url(XML-namespace-URL);
+@namespace prefix "XML-namespace-URL";
+
+/**
+ * Keyword: @charset
+ */
+@charset "UTF-8";
+@charset "iso-8859-15";
+
+/**
  * Keyword: !important
  */
 .element {
