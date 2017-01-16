@@ -1,3 +1,6 @@
+## 1.6.1 (January 16th, 2017)
+* Fixed issue with `const` keyword in JavaScript
+
 ## 1.6.0 (January 15th, 2017)
 * Added more language keywords
 	* JavaScript: `class`, `default`
