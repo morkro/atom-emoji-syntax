@@ -1,3 +1,6 @@
+## 1.6.2 (January 24th, 2017)
+* Fixed issue where the settings page added more and more content after reopening _(Issue [#38](https://github.com/morkro/atom-emoji-syntax/issues/38))_
+
 ## 1.6.1 (January 16th, 2017)
 * Fixed issue with `const` keyword in JavaScript
 
