@@ -1,3 +1,9 @@
+## 1.6.4 (9th February, 2017)
+* [Accidentally] Fixed a GitHub authentication issue
+
+## 1.6.3 (9th February, 2017)
+* Updated JavaScript `const` selector in response to Atom update (Pull Request [#41](https://github.com/morkro/atom-emoji-syntax/pull/41))
+
 ## 1.6.2 (January 24th, 2017)
 * Fixed issue where the settings page added more and more content after reopening _(Issue [#38](https://github.com/morkro/atom-emoji-syntax/issues/38))_
 
