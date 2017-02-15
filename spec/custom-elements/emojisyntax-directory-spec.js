@@ -1,11 +1,12 @@
 'use babel'
+/* eslint-env jasmine */
 
 import { DirectoryElement } from '../../lib/custom-elements'
 
 describe('<emojisyntax-directory>', () => {
-	const $directory = new DirectoryElement()
+  const $directory = new DirectoryElement()
 
-	it('it is an HTMLElement', () => {
-		expect($directory).toBeInstanceOf(HTMLElement)
-	})
+  it('it is an HTMLElement', () => {
+    expect($directory).toBeInstanceOf(HTMLElement)
+  })
 })

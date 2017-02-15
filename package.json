@@ -21,7 +21,10 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "scripts": {
-    "lint": "eslint lib && eslint spec"
+    "lint": "standard lib/**/*.js && standard spec/**/*.js"
+  },
+  "standard": {
+    "globals": ["atom", "HTMLElement", "HTMLUListElement", "CustomEvent"]
   },
   "dependencies": {
     "configstore": "^3.0.0",
@@ -29,8 +32,6 @@
     "event-kit": "^2.0.0"
   },
   "devDependencies": {
-    "eslint": "3.x",
-    "eslint-config-airbnb": "9.x",
-    "eslint-plugin-import": "1.x"
+    "standard": "^8.6.0"
   }
 }

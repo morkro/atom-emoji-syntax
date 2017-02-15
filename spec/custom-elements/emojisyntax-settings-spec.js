@@ -1,15 +1,16 @@
 'use babel'
+/* eslint-env jasmine */
 
 import { SettingsElement } from '../../lib/custom-elements'
 import EmojiSettings from '../../lib/settings'
 
 describe('<emojisyntax-settings>', () => {
-	beforeEach(() => atom.packages.activatePackage('emoji-syntax'))
+  beforeEach(() => atom.packages.activatePackage('emoji-syntax'))
 
-	it('can be initialized', () => {
-		const $settings = new SettingsElement()
-		$settings.initialize(new EmojiSettings({
-			style: atom.config.get('emoji-syntax.emojiStyles')
-		}))
-	})
+  it('can be initialized', () => {
+    const $settings = new SettingsElement()
+    $settings.initialize(new EmojiSettings({
+      style: atom.config.get('emoji-syntax.emojiStyles')
+    }))
+  })
 })
