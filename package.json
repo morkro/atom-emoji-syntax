@@ -1,7 +1,7 @@
 {
   "name": "emoji-syntax",
   "main": "./lib/main",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "Adds customisable emoji to your syntax keywords",
   "author": "Moritz Kröger <write@morkro.de>",
   "keywords": [
@@ -24,7 +24,12 @@
     "lint": "standard lib/**/*.js && standard spec/**/*.js"
   },
   "standard": {
-    "globals": ["atom", "HTMLElement", "HTMLUListElement", "CustomEvent"]
+    "globals": [
+      "atom",
+      "HTMLElement",
+      "HTMLUListElement",
+      "CustomEvent"
+    ]
   },
   "dependencies": {
     "configstore": "^3.0.0",
