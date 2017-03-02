@@ -1,3 +1,6 @@
+## 1.6.5 (2nd March, 2017)
+* Fixed an issue with broken line heights (Issue [#44](https://github.com/morkro/atom-emoji-syntax/issues/44))
+
 ## 1.6.4 (9th February, 2017)
 * [Accidentally] Fixed a GitHub authentication issue
 
