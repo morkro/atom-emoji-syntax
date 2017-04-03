@@ -1,3 +1,6 @@
+## 1.7.1 (3rd April, 2017)
+* Fixed unwanted emoji added to `switch` keyword in JavaScript files
+
 ## 1.7.0 (3rd April, 2017)
 * Added support for `language-babel` package _(Issue [#45](https://github.com/morkro/atom-emoji-syntax/issues/45))_
 * Added support for `.jsx` and `.tsx` files _(Issue [#43](https://github.com/morkro/atom-emoji-syntax/issues/43))_
