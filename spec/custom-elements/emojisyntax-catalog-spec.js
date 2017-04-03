@@ -4,6 +4,14 @@
 import { CatalogElement } from '../../lib/custom-elements'
 
 describe('<emojisyntax-catalog>', () => {
+  beforeEach(() => {
+    atom.packages.activatePackage('emoji-syntax')
+  })
+
+  afterEach(() => {
+    atom.packages.deactivatePackage('emoji-syntax')
+  })
+
   const $catalog = new CatalogElement()
 
   it('has all default properties', () => {

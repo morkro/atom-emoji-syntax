@@ -5,7 +5,14 @@ import * as _ from '../lib/language-data'
 import { python } from '../lib/languages'
 
 describe('Working with language objects', () => {
-  beforeEach(_.setLanguageStore)
+  beforeEach(() => {
+    atom.packages.activatePackage('emoji-syntax')
+    _.setLanguageStore()
+  })
+
+  afterEach(() => {
+    atom.packages.deactivatePackage('emoji-syntax')
+  })
 
   it('getAllLanguages() returns filtered & unfiltered language objects', () => {
     const allLanguages = _.getAllLanguages()
