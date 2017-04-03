@@ -1,11 +1,16 @@
+## 1.7.0 (3rd April, 2017)
+* Added support for `language-babel` package _(Issue [#45](https://github.com/morkro/atom-emoji-syntax/issues/45))_
+* Added support for `.jsx` and `.tsx` files _(Issue [#43](https://github.com/morkro/atom-emoji-syntax/issues/43))_
+* Updated Standard.js version to `9.0.2`
+
 ## 1.6.5 (2nd March, 2017)
-* Fixed an issue with broken line heights (Issue [#44](https://github.com/morkro/atom-emoji-syntax/issues/44))
+* Fixed an issue with broken line heights _(Issue [#44](https://github.com/morkro/atom-emoji-syntax/issues/44))_
 
 ## 1.6.4 (9th February, 2017)
 * [Accidentally] Fixed a GitHub authentication issue
 
 ## 1.6.3 (9th February, 2017)
-* Updated JavaScript `const` selector in response to Atom update (Pull Request [#41](https://github.com/morkro/atom-emoji-syntax/pull/41))
+* Updated JavaScript `const` selector in response to Atom update _(PR [#41](https://github.com/morkro/atom-emoji-syntax/pull/41))_
 
 ## 1.6.2 (January 24th, 2017)
 * Fixed issue where the settings page added more and more content after reopening _(Issue [#38](https://github.com/morkro/atom-emoji-syntax/issues/38))_
