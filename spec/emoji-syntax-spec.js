@@ -12,17 +12,11 @@ describe('Emoji Syntax', () => {
     atom.packages.deactivatePackage('emoji-syntax')
   })
 
-  describe('when the package is activated', () => {
-    it('should add an <style> element to the DOM', () => {
-      expect(atomStylesElement.querySelector('.emoji-syntax-stylesheet')).toBeDefined()
-    })
+  it('when the package is activated, should add an <style> element to the DOM', () => {
+    expect(atomStylesElement.querySelector('.emoji-syntax-stylesheet')).toBeDefined()
   })
 
-  describe('when the package is deactivated', () => {
-    beforeEach(() => atom.packages.deactivatePackage('emoji-syntax'))
-
-    it('should remove the <style> element from the DOM', () => {
-      expect(atomStylesElement.querySelector('.emoji-syntax-stylesheet')).toBeNull()
-    })
+  it('when the package is deactivated, should remove the <style> element from the DOM', () => {
+    expect(atomStylesElement.querySelector('.emoji-syntax-stylesheet')).toBeNull()
   })
 })
