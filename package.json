@@ -21,7 +21,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "scripts": {
-    "lint": "standard lib/**/*.js && standard spec/**/*.js"
+    "lint": "standard \"lib/**/*.js\" \"spec/**/*.js\""
   },
   "standard": {
     "globals": [
@@ -37,6 +37,6 @@
     "event-kit": "^2.0.0"
   },
   "devDependencies": {
-    "standard": "^8.6.0"
+    "standard": "^9.0.2"
   }
 }
