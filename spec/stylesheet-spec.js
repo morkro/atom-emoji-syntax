@@ -5,24 +5,28 @@ import { setLanguageStore, getLanguage } from '../lib/language-data'
 import * as _ from '../lib/stylesheet'
 
 describe('Emoji StyleSheet Module', () => {
-  beforeEach(() => atom.packages.activatePackage('emoji-syntax'))
-  afterEach(() => atom.packages.deactivatePackage('emoji-syntax'))
-
   describe('Creates a CSS selector', () => {
     let selector = null
     let content = null
 
     beforeEach(() => {
+      atom.packages.activatePackage('emoji-syntax')
       setLanguageStore()
       const { userSettings, internalSettings } = getLanguage('css')
+
       content = _.getContent()
       selector = _.createSelector({
         language: internalSettings.selector,
+        selector: internalSettings['@import'].selector,
         emoji: userSettings.all['@import'].emoji,
-        selector: userSettings.all['@import'].selector,
         pseudo: userSettings.all['@import'].pseudo,
-        spacing: userSettings.all['@import'].spacing
+        spacing: userSettings.all['@import'].spacing,
+        style: 'native'
       })
+    })
+
+    afterEach(() => {
+      atom.packages.deactivatePackage('emoji-syntax')
     })
 
     it('is a valid CSS selector', () => {
@@ -37,6 +41,14 @@ describe('Emoji StyleSheet Module', () => {
   describe('Creates a valid <style> element', () => {
     let elementDefault = null
     let elementCustom = null
+
+    beforeEach(() => {
+      atom.packages.activatePackage('emoji-syntax')
+    })
+
+    afterEach(() => {
+      atom.packages.deactivatePackage('emoji-syntax')
+    })
 
     beforeEach(() => {
       elementDefault = _.createStyleSheet()
@@ -78,6 +90,14 @@ describe('Emoji StyleSheet Module', () => {
   })
 
   describe('Adds, removes, updates stylesheet', () => {
+    beforeEach(() => {
+      atom.packages.activatePackage('emoji-syntax')
+    })
+
+    afterEach(() => {
+      atom.packages.deactivatePackage('emoji-syntax')
+    })
+
     it('should add stylesheet', () => {
       _.addStyleSheet()
       expect(_.styleSheetExists()).toBe(true)
