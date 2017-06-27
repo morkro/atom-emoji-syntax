@@ -1,3 +1,6 @@
+## 1.7.2 (27th June, 2017)
+* Fixed the settings pane which didn't open anymore _(Issue [#48](https://github.com/morkro/atom-emoji-syntax/issues/48))_
+
 ## 1.7.1 (3rd April, 2017)
 * Fixed unwanted emoji added to `switch` keyword in JavaScript files
 
