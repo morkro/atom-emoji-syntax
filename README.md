@@ -1,15 +1,16 @@
-<h1><img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;"></h1>
+<p align="center"><img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;"></p>
 
-<a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a> <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg">
+<p align="center">
+        <a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a>
+        <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg" />
+        <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2017.svg" />
+</p>
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
 
 **Emoji Syntax is what you need!**
 
 An atom package adding emoji to language keywords.
-
-## State Of Project :white_check_mark: _[active]_
-The project is in **active development**.
 
 ## Installation
 Install Emoji Syntax either via `apm`
