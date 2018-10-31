@@ -3,7 +3,7 @@
 <p align="center">
         <a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a>
         <img alt="devDependencies" src="https://david-dm.org/morkro/atom-emoji-syntax.svg" />
-        <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2017.svg" />
+        <img alt="Maintenance" src="https://img.shields.io/maintenance/yes/2018.svg" />
 </p>
 
 Getting bored of your code? Already tried out hundreds of syntax highlighter but always felt something is missing?
