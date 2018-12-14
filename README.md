@@ -1,4 +1,4 @@
-<p align="center"><img src="https://rawgit.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;"></p>
+<p align="center"><img src="https://combinatronics.com/morkro/atom-emoji-syntax/master/resources/emoji-syntax-logo.svg" alt="Emoji Syntax" style="width:100%;"></p>
 
 <p align="center">
         <a href="https://travis-ci.org/morkro/atom-emoji-syntax"><img src="https://travis-ci.org/morkro/atom-emoji-syntax.svg?branch=master" alt="Build Status"></a>
@@ -41,27 +41,27 @@ Only official language packages are supported. Other language packages might use
 	<tbody>
 		<tr>
 			<td>JavaScript</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/javascript-preview.png" title="JavaScript" alt="JavaScript"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/javascript-preview.png" title="JavaScript" alt="JavaScript"></td>
 		</tr>
 		<tr>
 			<td>TypeScript</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/typescript-preview.png" title="TypeScript" alt="TypeScript"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/typescript-preview.png" title="TypeScript" alt="TypeScript"></td>
 		</tr>
 		<tr>
 			<td>CSS</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/css-preview.png" title="CSS" alt="CSS"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/css-preview.png" title="CSS" alt="CSS"></td>
 		</tr>
 		<tr>
 			<td>Sass</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/scss-preview.png" title="SCSS" alt="SCSS"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/scss-preview.png" title="SCSS" alt="SCSS"></td>
 		</tr>
 		<tr>
 			<td>PHP</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/php-preview.png" title="PHP" alt="PHP"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/php-preview.png" title="PHP" alt="PHP"></td>
 		</tr>
 		<tr>
 			<td>Python</td>
-			<td><img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/ffa417c7/resources/python-preview.png" title="Python" alt="Python"></td>
+			<td><img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/ffa417c7/resources/python-preview.png" title="Python" alt="Python"></td>
 		</tr>
 	</tbody>
 </table>
@@ -79,25 +79,25 @@ _Note: not all emoji are supported in each of the custom sets yet!_
 		<tr>
 			<td>Native</td>
 			<td>
-				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-native.png" alt="Native">
+				<img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-native.png" alt="Native">
 			</td>
 		</tr>
 		<tr>
 			<td>Twemoji</td>
 			<td>
-				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-twemoji.png" alt="Twemoji">
+				<img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-twemoji.png" alt="Twemoji">
 			</td>
 		</tr>
 		<tr>
 			<td>Noto Emoji</td>
 			<td>
-				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-noto-emoji.png" alt="Noto Emoji">
+				<img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-noto-emoji.png" alt="Noto Emoji">
 			</td>
 		</tr>
 		<tr>
 			<td>EmojiOne™</td>
 			<td>
-				<img src="https://cdn.rawgit.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-emojione.png" alt="EmojiOne™">
+				<img src="https://cdn.combinatronics.com/morkro/atom-emoji-syntax/0fde8866/resources/style-preview-emojione.png" alt="EmojiOne™">
 			</td>
 		</tr>
 	</tbody>
@@ -112,7 +112,7 @@ _Note: not all emoji are supported in each of the custom sets yet!_
 ## Emoji Settings Page :wrench:
 Emoji Syntax comes with its own settings page. There you can customise, activate and deactivate every emoji for each language. The settings page is available through `Packages > Emoji Syntax > Settings` or the `emoji-syntax:settings` command.
 
-![Emoji Settings Page](https://cdn.rawgit.com/morkro/atom-emoji-syntax/master/resources/settingspage-preview.png)
+![Emoji Settings Page](https://cdn.combinatronics.com/morkro/atom-emoji-syntax/master/resources/settingspage-preview.png)
 
 Each language has its own section which you can deactivate. Doing that, the entire language won't have any emoji. The following options are available:
 
